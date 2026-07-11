@@ -1,5 +1,18 @@
 # Changelog
 
+## Alpha 0.7.3 — UTF-8, HUD mobile y clasificaciones completas
+
+- Normalización completa de archivos visibles a UTF-8.
+- Corrección de textos, acentos, símbolos y títulos corruptos.
+- Menú actualizado con iconos SVG inline consistentes y etiquetas visibles.
+- Reparado el selector mobile del HUD: Equipo, Campeonato, Finanzas y Actividad cambian contenido real sin recargar toda la app.
+- Resultados post-carrera y Race Weekend muestran clasificaciones completas.
+- Soporte validado para grillas variables, incluyendo Apex GP con 22 pilotos.
+- DNFs permanecen dentro de la clasificación completa.
+- Standings mantiene Top 10, Todos y Mi equipo; Todos muestra la totalidad de la categoría.
+- Cache busting actualizado a `?v=0.7.3`.
+- Agregada comprobación opcional de desarrollo para detectar mojibake en el DOM.
+
 ## Alpha 0.7.2 — Premium Mobile Experience, mercado estable y progresión satisfactoria
 
 - Corregido el cálculo de interés de pilotos para que nunca muestre `NaN/100`.

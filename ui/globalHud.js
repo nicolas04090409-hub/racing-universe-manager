@@ -9,6 +9,8 @@ export const MOBILE_HUD_GROUPS = {
   activity: "Actividad"
 };
 
+export const VALID_MOBILE_HUD_GROUPS = Object.keys(MOBILE_HUD_GROUPS);
+
 function metric(screen, label, value, tone = "") {
   return `<button class="hud-metric" data-action="go" data-screen="${screen}"><span>${label}</span><strong class="${tone}">${value}</strong></button>`;
 }
@@ -31,7 +33,13 @@ function sponsorIncome(team) {
 }
 
 function expectedSpend(team) {
-  return (team.driverSalaries ?? team.salaryCommitted ?? 0) + (team.staffSalaries ?? 0) + (team.supplierCosts ?? 0) + (team.operatingCosts ?? 0) + (team.developmentSpend ?? 0) + (team.facilitySpend ?? 0);
+  const finances = team.finances ?? {};
+  return (finances.driverSalaries ?? team.driverSalaries ?? team.salaryCommitted ?? 0)
+    + (finances.staffSalaries ?? team.staffSalaries ?? 0)
+    + (finances.supplierCosts ?? team.supplierCosts ?? 0)
+    + (finances.operatingCosts ?? team.operatingCosts ?? 0)
+    + (finances.developmentSpend ?? team.developmentSpend ?? 0)
+    + (finances.facilitySpend ?? team.facilitySpend ?? 0);
 }
 
 function expiringContract(world, drivers) {
@@ -53,7 +61,7 @@ function groupedMetrics(summary, world, group) {
   const teamStanding = state?.teamStandings?.find(row => row.teamId === team.id);
   const bestDriverStanding = state?.driverStandings?.find(row => driverIds(team).includes(row.driverId));
   const bestDriver = bestDriverStanding ? getDriver(world, bestDriverStanding.driverId) : summary.bestDriver;
-  const balance = team.projectedBalance ?? summary.balance ?? 0;
+  const balance = team.finances?.projectedBalance ?? team.projectedBalance ?? summary.balance ?? 0;
   const negotiationCount = (world.negotiations ?? []).filter(n => ["sent", "counter", "accepted", "waiting"].includes(n.status)).length;
   const next = summary.nextRace?.name?.split(" ").slice(0, 2).join(" ") ?? "Completo";
   const groups = {
@@ -85,17 +93,24 @@ function groupedMetrics(summary, world, group) {
   return groups[group] ?? groups.team;
 }
 
+export function renderMobileHudGroup(world, data, selectedGroup = "team") {
+  if (!world) return "";
+  const summary = getUserTeamSummary(world, data);
+  const group = VALID_MOBILE_HUD_GROUPS.includes(selectedGroup) ? selectedGroup : "team";
+  return groupedMetrics(summary, world, group).join("");
+}
+
 export function renderGlobalHud(world, data, selectedGroup = "team") {
   if (!world) return "";
   const summary = getUserTeamSummary(world, data);
   const storedGroup = world.ui?.selectedMobileHudGroup ?? selectedGroup;
-  const group = storedGroup in MOBILE_HUD_GROUPS ? storedGroup : "team";
-  const allMetrics = Object.keys(MOBILE_HUD_GROUPS).flatMap(key => groupedMetrics(summary, world, key));
+  const group = VALID_MOBILE_HUD_GROUPS.includes(storedGroup) ? storedGroup : "team";
+  const allMetrics = VALID_MOBILE_HUD_GROUPS.flatMap(key => groupedMetrics(summary, world, key));
   return `<div class="global-hud" style="--team-color:${summary.team.color};--team-primary:${summary.team.theme?.primaryColor ?? summary.team.color};--team-secondary:${summary.team.theme?.secondaryColor ?? summary.team.color}">
     <div class="hud-main"><strong>${summary.team.name}</strong><span>${summary.category.shortName}</span><span>Temp. ${world.currentSeason}</span><span>R${Math.min(summary.round, summary.totalRounds)}/${summary.totalRounds}</span></div>
     <div class="mobile-hud-grouped" data-hud-group="${group}">
       <label><span>Información</span><select data-mobile-hud-group>${Object.entries(MOBILE_HUD_GROUPS).map(([id, label]) => `<option value="${id}" ${id === group ? "selected" : ""}>${label}</option>`).join("")}</select></label>
-      <div class="mobile-hud-metrics hud-swap">${groupedMetrics(summary, world, group).join("")}</div>
+      <div id="mobile-hud-content" class="mobile-hud-metrics hud-swap">${renderMobileHudGroup(world, data, group)}</div>
     </div>
     <div class="hud-strip desktop-hud-strip">${allMetrics.join("")}</div>
   </div>`;

@@ -4,7 +4,7 @@ Juego web de gestión de automovilismo inspirado en simuladores de management de
 
 ## Estado del proyecto
 
-Alpha v0.7.2 — Premium Mobile Experience, mercado estable y progresión satisfactoria.
+Alpha v0.7.3 — UTF-8, HUD mobile funcional y clasificaciones completas.
 
 La versión visible del juego se centraliza en `appMeta.js`. El formato interno de guardado puede tener una versión distinta.
 
@@ -19,6 +19,9 @@ La versión visible del juego se centraliza en `appMeta.js`. El formato interno 
 - Sponsors con bono inmediato al firmar, ingreso anual y recálculo financiero.
 - Finanzas, contratos, staff, sponsors e ingeniería integrados.
 - Ingeniería con proyectos más rápidos, capacidad clara, instalaciones más accesibles e impacto visible contra rivales.
+- Textos normalizados en UTF-8 para local y GitHub Pages.
+- HUD mobile funcional con grupos Equipo, Campeonato, Finanzas y Actividad.
+- Resultados y clasificaciones completas con soporte para grillas variables de 20, 22 o más pilotos.
 - Gráficos simples de campeonato, evolución técnica y comparación de pilotos.
 - PWA básica con manifest, favicon e iconos.
 - Guardado/carga local mediante LocalStorage.
@@ -69,6 +72,12 @@ python -m http.server 8000
 8. Abrir la URL generada.
 
 El proyecto no requiere Node.js, npm, backend ni compilación.
+
+Después de subir una nueva versión:
+
+1. Esperar el despliegue de GitHub Pages.
+2. Abrir en incógnito o recargar sin caché.
+3. Verificar que la pantalla muestre la versión visible correcta.
 
 ## Guardado de partidas
 

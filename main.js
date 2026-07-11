@@ -27,32 +27,42 @@ import { renderSettingsScreen } from "./ui/settingsScreen.js";
 import { renderOffersScreen } from "./ui/offersScreen.js";
 import { renderStaffScreen } from "./ui/staffScreen.js";
 import { renderSponsorsScreen } from "./ui/sponsorsScreen.js";
-import { renderGlobalHud } from "./ui/globalHud.js";
+import { renderGlobalHud, renderMobileHudGroup, VALID_MOBILE_HUD_GROUPS } from "./ui/globalHud.js";
 import { renderRaceWeekendScreen } from "./ui/raceWeekendScreen.js";
 import { renderHistoryScreen } from "./ui/historyScreen.js";
 
 const SAVE_KEY = "racingUniverseManager.save.v1";
 const NAVIGATION = [
-  { section: "GENERAL", items: [["dashboard", "âŒ‚", "Paddock"], ["team", "â–°", "Mi equipo"], ["drivers", "â™Ÿ", "Pilotos"], ["market", "â‡„", "Mercado"], ["negotiations", "âœ", "Negociaciones"]] },
-  { section: "COMPETICIÃ“N", items: [["race-weekend", "â–£", "Race Weekend"], ["calendar", "â—‡", "Calendario"], ["race", "âš‘", "Carreras"], ["standings", "â‰¡", "Posiciones"], ["history", "â–·", "Historial"]] },
-  { section: "CARRERA", items: [["offers", "â˜…", "Ofertas del manager"], ["staff", "âš™", "Staff"], ["development", "âŒ", "IngenierÃ­a"], ["facilities", "âŒ‚", "Instalaciones"], ["finances", "$", "Finanzas"], ["sponsors", "â—", "Sponsors"], ["news", "â—Ž", "Noticias"], ["regulations", "Â§", "Reglamentos"]] },
-  { section: "SISTEMA", items: [["settings", "âš™", "ConfiguraciÃ³n"], ["save", "â—†", "Guardar / Cargar"]] }
+  { section: "GENERAL", items: [["dashboard", "Paddock"], ["team", "Mi equipo"], ["drivers", "Pilotos"], ["market", "Mercado"], ["negotiations", "Negociaciones"]] },
+  { section: "COMPETICIÓN", items: [["race-weekend", "Race Weekend"], ["calendar", "Calendario"], ["race", "Carreras"], ["standings", "Posiciones"], ["history", "Historial"]] },
+  { section: "CARRERA", items: [["offers", "Ofertas del manager"], ["staff", "Staff"], ["development", "Ingeniería"], ["facilities", "Instalaciones"], ["finances", "Finanzas"], ["sponsors", "Sponsors"], ["news", "Noticias"], ["regulations", "Reglamentos"]] },
+  { section: "SISTEMA", items: [["settings", "Configuración"], ["save", "Guardar / Cargar"]] }
 ];
-const MOBILE_PRIMARY = [["dashboard", "Inicio", "âŒ‚"], ["team", "Equipo", "â–°"], ["race-weekend", "Carrera", "â–£"], ["market", "Mercado", "â‡„"], ["more", "MÃ¡s", "â‹¯"]];
-const MOBILE_MORE = [["drivers", "Pilotos"], ["calendar", "Calendario"], ["race", "Carreras"], ["standings", "Posiciones"], ["development", "IngenierÃ­a"], ["facilities", "Instalaciones"], ["staff", "Staff"], ["sponsors", "Sponsors"], ["finances", "Finanzas"], ["news", "Noticias"], ["history", "Historial"], ["settings", "ConfiguraciÃ³n"], ["save", "Guardar partida"]];
-const TITLES = { dashboard: "Paddock", team: "Mi equipo", drivers: "Pilotos", market: "Scouting y mercado", negotiations: "Negociaciones", "race-weekend": "Race Weekend", calendar: "Calendario", race: "Carreras navegables", standings: "Posiciones", history: "Historial", offers: "Ofertas del manager", staff: "Staff", development: "IngenierÃ­a", facilities: "Instalaciones", finances: "Finanzas", sponsors: "Sponsors", news: "Noticias", regulations: "Reglamentos", settings: "ConfiguraciÃ³n", save: "Guardar / Cargar" };
+const MOBILE_PRIMARY = [["dashboard", "Inicio"], ["team", "Equipo"], ["race-weekend", "Carrera"], ["market", "Mercado"], ["more", "Más"]];
+const MOBILE_MORE = [["drivers", "Pilotos"], ["calendar", "Calendario"], ["race", "Carreras"], ["standings", "Posiciones"], ["development", "Ingeniería"], ["facilities", "Instalaciones"], ["staff", "Staff"], ["sponsors", "Sponsors"], ["finances", "Finanzas"], ["news", "Noticias"], ["history", "Historial"], ["settings", "Configuración"], ["save", "Guardar partida"]];
+const TITLES = { dashboard: "Paddock", team: "Mi equipo", drivers: "Pilotos", market: "Scouting y mercado", negotiations: "Negociaciones", "race-weekend": "Race Weekend", calendar: "Calendario", race: "Carreras navegables", standings: "Posiciones", history: "Historial", offers: "Ofertas del manager", staff: "Staff", development: "Ingeniería", facilities: "Instalaciones", finances: "Finanzas", sponsors: "Sponsors", news: "Noticias", regulations: "Reglamentos", settings: "Configuración", save: "Guardar / Cargar" };
 const state = { data: null, world: null, screen: "dashboard", selectedDriverId: null, standingsMode: "drivers", standingsScope: "top", raceRound: "latest", mobileMoreOpen: false, ui: { selectedMobileHudGroup: localStorage.getItem("rumMobileHudGroup") || "team", processing: null, postRaceResult: null, seasonSummary: null }, historyFilters: { mode: "universe", category: "current", season: "all", tab: "summary" }, marketFilters: { category: "all", academy: "all", potential: "all", ca: "all", age: "all", contract: "all" }, newsFilters: { type: "all", category: "all", priority: "all" } };
 const screen = document.querySelector("#screen");
 const modalRoot = document.querySelector("#modal-root");
 const loadingScreen = document.querySelector("#loading-screen");
 
-console.info(`${APP_NAME} â€” ${BUILD_LABEL}`);
+window.__RUM_BOOT_STARTED__ = true;
+console.info(`${APP_NAME} — ${BUILD_LABEL}`);
 const loadingVersion = document.querySelector("#loading-version");
 if (loadingVersion) loadingVersion.textContent = BUILD_LABEL;
 
 function hideLoading() {
   loadingScreen?.classList.add("hidden");
   setTimeout(() => loadingScreen?.remove(), 250);
+}
+
+function warnPossibleEncodingIssue() {
+  const debugEncoding = new URLSearchParams(window.location.search).has("debugEncoding") || localStorage.getItem("rumDebugEncoding") === "1";
+  if (!debugEncoding) return;
+  const text = document.body?.innerText ?? "";
+  const corruptedPatterns = ["\u00c3\u0192", "\u00c3\u201a", "\u00c3\u00a2", "\u00c3\u00b0\u00c5\u0178", "\u00ef\u00bf\u00bd", "\ufffd"];
+  const hit = corruptedPatterns.find(pattern => text.includes(pattern));
+  if (hit) console.warn("Possible encoding issue detected:", hit, text.slice(Math.max(0, text.indexOf(hit) - 80), text.indexOf(hit) + 160));
 }
 
 async function loadData() {
@@ -83,10 +93,37 @@ function pendingCount(id) {
   return 0;
 }
 
+function navIcon(id) {
+  const paths = {
+    dashboard: '<path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-5h-4v5H5a1 1 0 0 1-1-1z"/>',
+    team: '<path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2M8 17v2h8v-2"/>',
+    drivers: '<circle cx="12" cy="8" r="3"/><path d="M5 20c1.5-4 12.5-4 14 0"/>',
+    market: '<path d="M5 7h14M7 12h10M9 17h6"/><path d="m16 4 3 3-3 3M8 20l-3-3 3-3"/>',
+    negotiations: '<path d="M5 8h9l5 5-6 6-5-5V8z"/><circle cx="9" cy="11" r="1"/>',
+    "race-weekend": '<path d="M4 5h16v14H4z"/><path d="M8 5v14M16 5v14M4 10h16M4 15h16"/>',
+    calendar: '<path d="M5 5h14v15H5z"/><path d="M8 3v4M16 3v4M5 10h14"/>',
+    race: '<path d="M5 18V5h10l1 3h3v8h-4l-1-3H8v5z"/>',
+    standings: '<path d="M6 18V9h4v9M10 18V5h4v13M14 18v-6h4v6"/>',
+    history: '<path d="M5 12a7 7 0 1 0 2-5"/><path d="M5 5v5h5M12 8v5l3 2"/>',
+    offers: '<path d="m12 4 2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/>',
+    staff: '<circle cx="9" cy="8" r="3"/><circle cx="16" cy="10" r="2.5"/><path d="M3 20c1-4 11-4 12 0M12 20c.8-3 7-3 8 0"/>',
+    development: '<path d="M4 15 15 4l5 5L9 20H4z"/><path d="m13 6 5 5"/>',
+    facilities: '<path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-7h8v7M8 10h8"/>',
+    finances: '<path d="M12 3v18M17 7c-1-2-9-2-9 1 0 4 9 2 9 6 0 3-8 3-10 1"/>',
+    sponsors: '<path d="M5 7h14v10H5z"/><path d="M8 11h8M8 14h5"/>',
+    news: '<path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/>',
+    regulations: '<path d="M7 4h10v16H7z"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+    settings: '<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>',
+    save: '<path d="M5 4h12l2 2v14H5z"/><path d="M8 4v6h8M8 20v-6h8"/>',
+    more: '<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>'
+  };
+  return `<svg class="nav-svg" viewBox="0 0 24 24" aria-hidden="true">${paths[id] ?? paths.dashboard}</svg>`;
+}
+
 function renderNav() {
-  document.querySelector("#main-nav").innerHTML = NAVIGATION.map(group => `<div class="nav-group"><span class="nav-section">${group.section}</span>${group.items.map(([id, icon, label]) => {
+  document.querySelector("#main-nav").innerHTML = NAVIGATION.map(group => `<div class="nav-group"><span class="nav-section">${group.section}</span>${group.items.map(([id, label]) => {
     const count = pendingCount(id);
-    return `<button type="button" class="nav-button ${state.screen === id ? "active" : ""}" data-action="go" data-screen="${id}" ${!state.world ? "disabled" : ""}><span class="nav-icon">${icon}</span>${label}${count ? `<b class="nav-count">${count}</b>` : ""}</button>`;
+    return `<button type="button" class="nav-button ${state.screen === id ? "active" : ""}" data-action="go" data-screen="${id}" aria-label="Abrir ${label}" ${!state.world ? "disabled" : ""}><span class="nav-icon">${navIcon(id)}</span>${label}${count ? `<b class="nav-count">${count}</b>` : ""}</button>`;
   }).join("")}</div>`).join("");
 }
 
@@ -95,10 +132,10 @@ function renderMobileNav() {
   const panel = document.querySelector("#mobile-more-panel");
   if (!nav || !panel) return;
   document.body.classList.toggle("has-world", Boolean(state.world));
-  nav.innerHTML = MOBILE_PRIMARY.map(([id, label, icon]) => `<button type="button" class="${(state.screen === id || id === "more" && state.mobileMoreOpen) ? "active" : ""}" data-action="${id === "more" ? "toggle-mobile-more" : "go"}" ${id !== "more" ? `data-screen="${id}"` : ""} ${!state.world && id !== "more" ? "disabled" : ""}><span>${icon}</span><strong>${label}</strong></button>`).join("");
+  nav.innerHTML = MOBILE_PRIMARY.map(([id, label]) => `<button type="button" class="${(state.screen === id || id === "more" && state.mobileMoreOpen) ? "active" : ""}" data-action="${id === "more" ? "toggle-mobile-more" : "go"}" ${id !== "more" ? `data-screen="${id}"` : ""} aria-label="${id === "more" ? "Abrir más secciones" : `Abrir ${label}`}" ${!state.world && id !== "more" ? "disabled" : ""}><span>${navIcon(id)}</span><strong>${label}</strong></button>`).join("");
   panel.classList.toggle("open", state.mobileMoreOpen);
   panel.setAttribute("aria-hidden", state.mobileMoreOpen ? "false" : "true");
-  panel.innerHTML = `<div class="mobile-more-card" role="dialog" aria-label="MÃ¡s secciones"><div class="mobile-more-head"><strong>MÃ¡s secciones</strong><button type="button" class="close" data-action="toggle-mobile-more" aria-label="Cerrar menÃº">Ã—</button></div><div class="mobile-more-grid">${MOBILE_MORE.map(([id, label]) => `<button type="button" class="${state.screen === id ? "active" : ""}" data-action="go" data-screen="${id}" ${!state.world ? "disabled" : ""}>${label}</button>`).join("")}</div></div>`;
+  panel.innerHTML = `<div class="mobile-more-card" role="dialog" aria-label="Más secciones"><div class="mobile-more-head"><strong>Más secciones</strong><button type="button" class="close" data-action="toggle-mobile-more" aria-label="Cerrar menú">×</button></div><div class="mobile-more-grid">${MOBILE_MORE.map(([id, label]) => `<button type="button" class="${state.screen === id ? "active" : ""}" data-action="go" data-screen="${id}" ${!state.world ? "disabled" : ""}>${label}</button>`).join("")}</div></div>`;
 }
 
 function welcome() {
@@ -108,7 +145,7 @@ function welcome() {
   return `<section class="mobile-home hero app-home release-home">
     <div class="release-version">${BUILD_LABEL}</div>
     <div class="app-home-brand"><span class="brand-mark big">R</span><div><h2>${APP_NAME}</h2><p>GestionÃ¡ tu universo de motorsport desde el Paddock.</p></div></div>
-    ${saved ? `<article class="card continue-card"><span class="metric-label">CONTINUAR PARTIDA</span><h3>${saved.team?.name ?? "Equipo"}</h3><p>${saved.category?.name ?? "CategorÃ­a"}<br>Temporada ${saved.season} Â· Ronda ${Math.min(saved.round, saved.total || saved.round)}/${saved.total || "?"}<br><small>Ãšltima vez jugada: ${updated}</small></p><button type="button" id="continue-button" class="button primary touch-primary" data-action="continue-game">Continuar partida</button></article>` : `<article class="card continue-card"><span class="metric-label">SIN GUARDADO</span><h3>No hay partidas guardadas todavÃ­a.</h3><p>CreÃ¡ una nueva partida para elegir equipo y empezar en el Paddock.</p></article>`}
+    ${saved ? `<article class="card continue-card"><span class="metric-label">CONTINUAR PARTIDA</span><h3>${saved.team?.name ?? "Equipo"}</h3><p>${saved.category?.name ?? "Categoría"}<br>Temporada ${saved.season} · Ronda ${Math.min(saved.round, saved.total || saved.round)}/${saved.total || "?"}<br><small>Última vez jugada: ${updated}</small></p><button type="button" id="continue-button" class="button primary touch-primary" data-action="continue-game">Continuar partida</button></article>` : `<article class="card continue-card"><span class="metric-label">SIN GUARDADO</span><h3>No hay partidas guardadas todavía.</h3><p>Creá una nueva partida para elegir equipo y empezar en el Paddock.</p></article>`}
     <div class="home-actions">
       <button type="button" id="new-game-button" class="button ${primary === "new-game" ? "primary" : ""} touch-primary" data-action="new-game">Nueva partida</button>
       <button type="button" class="button" data-action="load" ${hasSave() ? "" : "disabled"}>Cargar partida</button>
@@ -134,8 +171,8 @@ function render() {
   const categoryState = state.world && playerCategory ? state.world.categoryStates[playerCategory.id] : null;
   if (team) applyTeamThemeToDocument(team);
   document.querySelector("#eyebrow").textContent = view?.name ?? "UNIVERSO DEL MOTORSPORT";
-  document.querySelector("#mobile-summary").textContent = state.world ? `${team?.shortName} Â· ${playerCategory?.shortName} Â· Temp. ${state.world.currentSeason} Â· R${Math.min(categoryState?.currentRound ?? 1, playerCategory?.calendar.length ?? 1)}/${playerCategory?.calendar.length ?? 1}` : BUILD_LABEL;
-  document.querySelector("#save-status").textContent = state.world ? `${team?.shortName} Â· ${playerCategory?.shortName}` : BUILD_LABEL;
+  document.querySelector("#mobile-summary").textContent = state.world ? `${team?.shortName} · ${playerCategory?.shortName} · Temp. ${state.world.currentSeason} · R${Math.min(categoryState?.currentRound ?? 1, playerCategory?.calendar.length ?? 1)}/${playerCategory?.calendar.length ?? 1}` : BUILD_LABEL;
+  document.querySelector("#save-status").textContent = state.world ? `${team?.shortName} · ${playerCategory?.shortName}` : BUILD_LABEL;
   document.querySelector("#game-meta").innerHTML = state.world ? `<label class="category-picker"><span>VISTA DEL UNIVERSO</span><select id="category-selector">${state.world.categories.map(c => `<option value="${c.id}" ${c.id === view.id ? "selected" : ""}>${c.name}</option>`).join("")}</select></label><strong>${worldVersionLabel()}</strong>` : "";
   document.querySelector(".topbar-tools").classList.toggle("hidden", !state.world);
   if (state.world) {
@@ -146,6 +183,7 @@ function render() {
   if (!state.world) { screen.innerHTML = welcome(); bindWelcomeActions(); return; }
   const renderers = { dashboard: () => renderDashboard(state.world, state.data), team: () => renderTeamScreen(state.world), drivers: () => renderDriverScreen(state.world, state.data, state.selectedDriverId), market: () => renderMarketScreen(state.world, state.data, state.marketFilters), negotiations: () => renderNegotiationsScreen(state.world), "race-weekend": () => renderRaceWeekendScreen(state.world, state.data, state.ui), calendar: () => renderCalendarScreen(state.world, state.data), race: () => renderRaceScreen(state.world, state.data, state.raceRound, state.ui), standings: () => renderStandingsScreen(state.world, state.standingsMode, state.standingsScope), history: () => renderHistoryScreen(state.world, state.data, state.historyFilters), offers: () => renderOffersScreen(state.world), staff: () => renderStaffScreen(state.world), development: () => renderDevelopmentScreen(state.world, state.data), facilities: () => renderFacilitiesScreen(state.world), finances: () => renderFinanceScreen(state.world, state.data), sponsors: () => renderSponsorsScreen(state.world), news: () => renderNewsScreen(state.world, state.newsFilters), regulations: () => renderRegulationsScreen(state.world, state.data), settings: () => renderSettingsScreen(state.world), save: () => renderSaveScreen(state.world) };
   screen.innerHTML = (renderers[state.screen] ?? renderers.dashboard)();
+  warnPossibleEncodingIssue();
 }
 
 function worldVersionLabel() {
@@ -155,7 +193,7 @@ function worldVersionLabel() {
 function chooseTeam() {
   state.mobileMoreOpen = false;
   renderMobileNav();
-  modalRoot.innerHTML = `<div class="modal-backdrop"><div class="modal"><div class="modal-head"><div><div class="metric-label accent">NUEVA PARTIDA Â· ${BUILD_LABEL}</div><h2>ElegÃ­ equipo y categorÃ­a</h2><p class="muted">La partida abrirÃ¡ en el Paddock Hub.</p></div><button type="button" class="close" data-action="close-modal" aria-label="Cerrar">Ã—</button></div>${state.data.categories.map(category => `<h3>${category.name} <small class="muted">Â· ${category.realEquivalent}</small></h3><div class="team-picker">${state.data.teams.filter(t => t.categoryId === category.id).map(team => `<button type="button" class="team-option" style="--team-color:${team.color}" data-action="select-team" data-team="${team.id}"><strong>${team.name}</strong><span>Auto ${team.carPerformance} Â· ReputaciÃ³n ${team.reputation} Â· $${(team.budget / 1e6).toFixed(1)}M Â· ${team.teamPhilosophy ?? "balanced"}</span></button>`).join("")}</div>`).join("")}</div></div>`;
+  modalRoot.innerHTML = `<div class="modal-backdrop"><div class="modal"><div class="modal-head"><div><div class="metric-label accent">NUEVA PARTIDA · ${BUILD_LABEL}</div><h2>Elegí equipo y categoría</h2><p class="muted">La partida abrirá en el Paddock Hub.</p></div><button type="button" class="close" data-action="close-modal" aria-label="Cerrar">×</button></div>${state.data.categories.map(category => `<h3>${category.name} <small class="muted">· ${category.realEquivalent}</small></h3><div class="team-picker">${state.data.teams.filter(t => t.categoryId === category.id).map(team => `<button type="button" class="team-option" style="--team-color:${team.color}" data-action="select-team" data-team="${team.id}"><strong>${team.name}</strong><span>Auto ${team.carPerformance} · Reputación ${team.reputation} · $${(team.budget / 1e6).toFixed(1)}M · ${team.teamPhilosophy ?? "balanced"}</span></button>`).join("")}</div>`).join("")}</div></div>`;
 }
 
 function toast(message, type = "") {
@@ -170,6 +208,25 @@ function persist(message = "Partida guardada.") {
   syncTeamsAndDrivers(state.world);
   saveGame(state.world);
   toast(message, "good");
+}
+
+function updateMobileHudContent() {
+  if (!state.world) return;
+  state.world.ui ??= {};
+  state.world.ui.selectedMobileHudGroup = state.ui.selectedMobileHudGroup;
+  const container = document.querySelector("#mobile-hud-content");
+  const wrapper = document.querySelector(".mobile-hud-grouped");
+  const select = document.querySelector("[data-mobile-hud-group]");
+  if (container) container.innerHTML = renderMobileHudGroup(state.world, state.data, state.ui.selectedMobileHudGroup);
+  if (wrapper) wrapper.dataset.hudGroup = state.ui.selectedMobileHudGroup;
+  if (select) select.value = state.ui.selectedMobileHudGroup;
+}
+
+function handleMobileHudGroupChange(group) {
+  if (!VALID_MOBILE_HUD_GROUPS.includes(group)) return;
+  state.ui.selectedMobileHudGroup = group;
+  localStorage.setItem("rumMobileHudGroup", group);
+  updateMobileHudContent();
 }
 
 function standingsSnapshot(categoryId = state.world?.currentCategoryId) {
@@ -231,7 +288,7 @@ function readWeekendSetup() { return { setup: { aeroLevel: document.querySelecto
 document.addEventListener("change", event => {
   if (event.target.id === "category-selector" && state.world) { state.world.viewCategoryId = event.target.value; state.selectedDriverId = null; state.raceRound = "latest"; state.historyFilters.category = "current"; render(); }
   if (event.target.dataset.raceRound) { state.raceRound = event.target.value; render(); }
-  if (event.target.dataset.mobileHudGroup) { state.ui.selectedMobileHudGroup = event.target.value; localStorage.setItem("rumMobileHudGroup", state.ui.selectedMobileHudGroup); if (state.world) { state.world.ui ??= {}; state.world.ui.selectedMobileHudGroup = state.ui.selectedMobileHudGroup; } render(); }
+  if (event.target.dataset.mobileHudGroup) { handleMobileHudGroupChange(event.target.value); }
   if (event.target.dataset.historyFilter) { state.historyFilters[event.target.dataset.historyFilter] = event.target.value; render(); }
   if (event.target.dataset.marketFilter) { state.marketFilters[event.target.dataset.marketFilter] = event.target.value; render(); }
   if (event.target.dataset.newsFilter) { state.newsFilters[event.target.dataset.newsFilter] = event.target.value; render(); }
@@ -254,7 +311,7 @@ document.addEventListener("click", event => {
   if (action === "close-modal") { modalRoot.innerHTML = ""; return; }
   if (action === "select-team") { state.world = createWorld(state.data, button.dataset.team); state.screen = "dashboard"; state.ui.selectedMobileHudGroup = "team"; state.ui.postRaceResult = null; state.ui.seasonSummary = null; state.world.ui = { selectedMobileHudGroup: "team" }; modalRoot.innerHTML = ""; persist("Partida creada."); render(); return; }
   if (action === "save" && state.world) { persist("Partida guardada."); return; }
-  if (action === "delete-save" && confirm("Â¿Borrar definitivamente la partida guardada?")) { deleteSave(); toast("Slot borrado."); render(); return; }
+  if (action === "delete-save" && confirm("¿Borrar definitivamente la partida guardada?")) { deleteSave(); toast("Slot borrado."); render(); return; }
   if (action === "simulate-race") { if (state.ui.processing) return; const pre = standingsSnapshot(state.world.currentCategoryId); startProcessing("race", "Simulando carrera...", "Procesando estrategias y campeonato."); setTimeout(() => { const race = simulateNextRace(state.world, state.data); finishProcessing(); if (race) showRaceResult(race, pre, `Ronda ${race.round} simulada.`); else { toast("No hay carrera pendiente."); render(); } }, 220); return; }
   if (action === "simulate-world") { if (state.ui.processing) return; const pre = standingsSnapshot(state.world.currentCategoryId); startProcessing("race-global", "Simulando fin de semana...", "Avanzando categorías y actualizando el mundo."); setTimeout(() => { const races = simulateGlobalWeekend(state.world, state.data); finishProcessing(); const playerRace = races.find(r => r.categoryId === state.world.currentCategoryId) ?? races.at(-1); if (playerRace) showRaceResult(playerRace, pre, `${races.length} categorías avanzaron este fin de semana.`); else { persist("No hubo carreras pendientes."); render(); } }, 260); return; }
   if (action === "simulate-season") { if (state.ui.processing) return; if (!confirm("Se simularán todas las carreras pendientes de todas las categorías. ¿Continuar?")) return; startProcessing("season", "Simulando temporada...", "Procesando carreras, campeonatos y noticias."); setTimeout(() => { const races = simulateRemainingSeason(state.world, state.data); finishProcessing(); state.ui.postRaceResult = null; state.ui.seasonSummary = { races }; state.screen = "race"; persist(`${races.length} carreras simuladas. Universo listo para cerrar.`); render(); requestAnimationFrame(() => document.querySelector("#race-focus")?.scrollIntoView({ behavior: "smooth", block: "start" })); }, 320); return; }
@@ -309,7 +366,7 @@ async function boot() {
   } catch (error) {
     hideLoading();
     console.error("Data load failed", error);
-    screen.innerHTML = `<div class="empty card load-error"><div><h2>No se pudieron cargar los datos del juego.</h2><p>RevisÃ¡ la conexiÃ³n o volvÃ© a intentar. Si estÃ¡s en GitHub Pages, esperÃ¡ unos segundos y recargÃ¡ sin cachÃ©.</p><div class="actions"><button class="button primary" data-action="retry-load">Reintentar</button><button class="button" data-action="toggle-error-details">Ver detalles tÃ©cnicos</button></div><pre id="error-details" class="hidden">${String(error.stack ?? error.message ?? error)}</pre></div></div>`;
+    screen.innerHTML = `<div class="empty card load-error"><div><h2>No se pudieron cargar los datos del juego.</h2><p>Revisá la conexión o volvé a intentar. Si estás en GitHub Pages, esperá unos segundos y recargá sin caché.</p><div class="actions"><button class="button primary" data-action="retry-load">Reintentar</button><button class="button" data-action="toggle-error-details">Ver detalles técnicos</button></div><pre id="error-details" class="hidden">${String(error.stack ?? error.message ?? error)}</pre></div></div>`;
   }
 }
 

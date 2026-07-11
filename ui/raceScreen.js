@@ -167,7 +167,7 @@ function renderStoredRace(world, data, result, preSnapshot = null, focused = fal
   return `${focused ? renderPostRaceSummary(world, data, result, preSnapshot) : ""}
   ${!focused ? pageHead(`Resultado guardado: ${circuit?.name ?? result.circuitId}`, `${result.weather ?? "Clima variable"}${result.safetyCar ? " · Safety Car" : ""} · Ronda ${result.round} · ${result.raceWeekend ? "Race Weekend" : "Simulación rápida"}`) : ""}
   ${circuitFacts(circuit)}
-  <div class="compact-ranking-list race-result-compact">${results.slice(0, 12).map(r => `<button class="compact-ranking-row as-button" data-action="view-driver" data-driver="${r.driverId}"><span class="rank">#${r.position}</span><span class="name">${getDriver(world, r.driverId)?.name ?? r.driverId}</span><small>${getTeam(world, r.teamId)?.shortName ?? "—"} · parrilla P${r.grid ?? "—"} · ${r.pits ?? 0} boxes</small><strong>${r.points ?? 0} pts</strong></button>`).join("")}</div>
+  <div class="compact-ranking-list race-result-compact">${results.map(r => `<button class="compact-ranking-row as-button full-race-row ${r.retired ? "is-dnf" : ""}" data-action="view-driver" data-driver="${r.driverId}"><span class="rank">#${r.position}</span><span class="name">${getDriver(world, r.driverId)?.name?.split(" ").at(-1) ?? r.driverId}</span><small>${getTeam(world, r.teamId)?.shortName ?? "—"} · ${r.retired ? `DNF · ${r.cause ?? "Retirado"}` : r.position === 1 ? "Ganador" : `+${safe(r.gap).toFixed(3)}s`}</small><strong>${r.points ?? 0} pts</strong></button>`).join("")}</div>
   <div class="table-wrap race-desktop-table"><table class="data-table"><thead><tr><th>Pos</th><th>Piloto</th><th>Equipo</th><th>Parrilla</th><th>Gap / Estado</th><th>Boxes</th><th>Puntos</th></tr></thead><tbody>${results.map(r => `<tr>
     <td class="pos">${r.position}</td>
     <td><button class="table-link" data-action="view-driver" data-driver="${r.driverId}">${getDriver(world, r.driverId)?.name ?? r.driverId}</button></td>
@@ -178,7 +178,7 @@ function renderStoredRace(world, data, result, preSnapshot = null, focused = fal
     <td><strong>${r.points ?? 0}</strong></td>
   </tr>`).join("")}</tbody></table></div>
   <div class="grid two">
-    <article class="card"><h3>Estrategias</h3>${results.slice(0, 8).map(r => `<div class="standing-line"><b>${getDriver(world, r.driverId)?.name ?? r.driverId}</b><span>${(r.tyresUsed ?? []).join(" → ") || "Sin datos"}</span><strong>${r.pits ?? 0} parada(s)</strong></div>`).join("")}</article>
+    <article class="card"><h3>Estrategias</h3>${results.map(r => `<div class="standing-line"><b>${getDriver(world, r.driverId)?.name ?? r.driverId}</b><span>${(r.tyresUsed ?? []).join(" → ") || "Sin datos"}</span><strong>${r.pits ?? 0} parada(s)</strong></div>`).join("")}</article>
     <article class="card"><h3>Incidentes y control de carrera</h3>${incidents.length ? incidents.map(e => `<div class="standing-line"><b>${e.segment ?? "Carrera"}</b><span>${e.description ?? e.message ?? e.type ?? "Incidente"}</span><strong>${e.severity ?? ""}</strong></div>`).join("") : `<p class="muted">Sin incidentes relevantes guardados.</p>`}</article>
   </div>`;
 }

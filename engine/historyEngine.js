@@ -1,7 +1,7 @@
 import { snapshotCategory } from "./categoryEngine.js";
 
 export function createSeasonHistorySnapshot(world,{moves=[],retired=[]}={}){
-  const season={season:world.currentSeason,categories:{},majorTransfers:moves,retiredDrivers:retired.map(d=>d.id),majorNews:(world.news??[]).slice(0,12)};
+  const season={season:world.currentSeason,categories:{},majorTransfers:moves,retiredDrivers:retired.map(d=>d.id),majorNews:(world.news??[]).slice(0,20)};
   for(const category of world.categories){
     const state=world.categoryStates[category.id],races=world.raceResults.filter(r=>r.season===world.currentSeason&&r.categoryId===category.id);
     season.categories[category.id]={driversChampion:state.driverStandings[0]?.driverId??null,teamsChampion:state.teamStandings[0]?.teamId??null,driverStandings:structuredClone(state.driverStandings),teamStandings:structuredClone(state.teamStandings),raceResults:races.map(r=>({id:r.id,round:r.round,circuitId:r.circuitId,winnerDriverId:r.results?.[0]?.driverId,winnerTeamId:r.results?.[0]?.teamId,events:r.events?.slice(0,6)??[]})),majorTransfers:moves,majorNews:(world.news??[]).filter(n=>!n.categoryId||n.categoryId===category.id).slice(0,8),promotedDrivers:moves.filter(m=>m.includes("asciende")),retiredDrivers:retired.filter(d=>d.categoryId===category.id).map(d=>d.id),snapshot:snapshotCategory(state)};
