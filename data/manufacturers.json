@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "type": "engine_supplier",
+    "reputation": 94,
+    "cost": 22000000,
+    "performance": 93,
+    "reliability": 86,
+    "developmentRate": 88,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "mercedes",
+    "name": "Mercedes",
+    "type": "engine_supplier",
+    "reputation": 94,
+    "cost": 22500000,
+    "performance": 92,
+    "reliability": 90,
+    "developmentRate": 88,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "honda",
+    "name": "Honda",
+    "type": "engine_supplier",
+    "reputation": 93,
+    "cost": 21800000,
+    "performance": 93,
+    "reliability": 89,
+    "developmentRate": 90,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "renault-alpine",
+    "name": "Renault Alpine",
+    "type": "engine_supplier",
+    "reputation": 86,
+    "cost": 15000000,
+    "performance": 84,
+    "reliability": 86,
+    "developmentRate": 82,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "audi",
+    "name": "Audi",
+    "type": "engine_supplier",
+    "reputation": 88,
+    "cost": 17000000,
+    "performance": 86,
+    "reliability": 88,
+    "developmentRate": 88,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota",
+    "type": "chassis_partner",
+    "reputation": 86,
+    "cost": 9000000,
+    "performance": 84,
+    "reliability": 90,
+    "developmentRate": 86,
+    "preferredCategories": [
+      "apex-2",
+      "apex-3"
+    ]
+  },
+  {
+    "id": "porsche",
+    "name": "Porsche",
+    "type": "electronics_supplier",
+    "reputation": 89,
+    "cost": 11000000,
+    "performance": 87,
+    "reliability": 91,
+    "developmentRate": 88,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac",
+    "type": "engine_supplier",
+    "reputation": 82,
+    "cost": 12000000,
+    "performance": 80,
+    "reliability": 84,
+    "developmentRate": 85,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "chevrolet",
+    "name": "Chevrolet",
+    "type": "engine_supplier",
+    "reputation": 80,
+    "cost": 8500000,
+    "performance": 79,
+    "reliability": 83,
+    "developmentRate": 82,
+    "preferredCategories": [
+      "apex-2",
+      "apex-3"
+    ]
+  },
+  {
+    "id": "ford",
+    "name": "Ford",
+    "type": "engine_supplier",
+    "reputation": 84,
+    "cost": 12500000,
+    "performance": 83,
+    "reliability": 84,
+    "developmentRate": 86,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "cosworth",
+    "name": "Cosworth",
+    "type": "engine_supplier",
+    "reputation": 78,
+    "cost": 6000000,
+    "performance": 78,
+    "reliability": 82,
+    "developmentRate": 80,
+    "preferredCategories": [
+      "apex-2",
+      "apex-3"
+    ]
+  },
+  {
+    "id": "pirelli",
+    "name": "Pirelli",
+    "type": "tyre_supplier",
+    "reputation": 94,
+    "cost": 8000000,
+    "performance": 88,
+    "reliability": 91,
+    "developmentRate": 78,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2",
+      "apex-3"
+    ]
+  },
+  {
+    "id": "firestone",
+    "name": "Firestone",
+    "type": "tyre_supplier",
+    "reputation": 82,
+    "cost": 5200000,
+    "performance": 80,
+    "reliability": 86,
+    "developmentRate": 78,
+    "preferredCategories": [
+      "apex-2",
+      "apex-3"
+    ]
+  },
+  {
+    "id": "michelin",
+    "name": "Michelin",
+    "type": "tyre_supplier",
+    "reputation": 90,
+    "cost": 7600000,
+    "performance": 87,
+    "reliability": 92,
+    "developmentRate": 80,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "bridgestone",
+    "name": "Bridgestone",
+    "type": "tyre_supplier",
+    "reputation": 88,
+    "cost": 7200000,
+    "performance": 86,
+    "reliability": 90,
+    "developmentRate": 79,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "shell",
+    "name": "Shell",
+    "type": "fuel_supplier",
+    "reputation": 92,
+    "cost": 7000000,
+    "performance": 88,
+    "reliability": 90,
+    "developmentRate": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "petronas",
+    "name": "Petronas",
+    "type": "fuel_supplier",
+    "reputation": 91,
+    "cost": 6900000,
+    "performance": 87,
+    "reliability": 90,
+    "developmentRate": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ]
+  },
+  {
+    "id": "castrol",
+    "name": "Castrol",
+    "type": "fuel_supplier",
+    "reputation": 84,
+    "cost": 4700000,
+    "performance": 82,
+    "reliability": 87,
+    "developmentRate": 80,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  },
+  {
+    "id": "mobil-1",
+    "name": "Mobil 1",
+    "type": "fuel_supplier",
+    "reputation": 88,
+    "cost": 5600000,
+    "performance": 86,
+    "reliability": 88,
+    "developmentRate": 82,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ]
+  }
+]

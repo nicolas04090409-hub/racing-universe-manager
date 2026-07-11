@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Racing Universe Manager — simulador de gestión de automovilismo">
+  <meta name="theme-color" content="#071018">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Racing Manager">
+  <title>Racing Universe Manager</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css?v=0.7.0">
+</head>
+<body>
+  <div id="loading-screen" class="loading-screen" aria-live="polite">
+    <div class="loading-card">
+      <span class="brand-mark big">R</span>
+      <h1>Racing Universe Manager</h1>
+      <p>Inicializando universo...</p>
+      <small id="loading-version"></small>
+    </div>
+  </div>
+  <div id="app" class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">R</span><div><strong>Racing Universe</strong><small>MANAGER</small></div></div>
+      <nav id="main-nav" aria-label="Navegación principal"></nav>
+      <div class="sidebar-footer"><span class="status-dot"></span><span id="save-status">Sin partida activa</span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-button" aria-label="Abrir menú">☰</button>
+        <div class="topbar-title"><p id="eyebrow">CENTRO DE MANDO</p><h1 id="page-title">Racing Universe Manager</h1><div id="mobile-summary" class="mobile-summary"></div></div>
+        <button class="icon-button mobile-save-button" data-action="save" aria-label="Guardar partida">💾</button>
+        <div class="topbar-tools">
+          <label class="global-search"><span>⌕</span><input id="global-search" type="search" placeholder="Buscar piloto o equipo" aria-label="Buscar piloto o equipo"></label>
+          <div id="game-meta" class="game-meta"></div>
+          <div class="user-badge"><span>TP</span><div><strong>Team Principal</strong><small>Perfil de manager</small></div></div>
+        </div>
+      </header>
+      <div id="global-hud"></div>
+      <section id="screen" class="screen" aria-live="polite"></section>
+    </main>
+  </div>
+  <nav id="mobile-nav" class="mobile-bottom-nav" aria-label="Navegación mobile"></nav>
+  <div id="mobile-more-panel" class="mobile-more-panel" aria-hidden="true"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="assertive"></div>
+  <script type="module" src="./main.js?v=0.7.0"></script>
+</body>
+</html>

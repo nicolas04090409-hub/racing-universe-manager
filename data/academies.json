@@ -1,0 +1,205 @@
+[
+  {
+    "id": "red-bull",
+    "name": "Red Bull Junior Team",
+    "reputation": 96,
+    "budget": 24000000,
+    "developmentQuality": 94,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe",
+      "latinAmerica",
+      "asia"
+    ],
+    "driverSlots": 8
+  },
+  {
+    "id": "ferrari",
+    "name": "Ferrari Driver Academy",
+    "reputation": 94,
+    "budget": 22000000,
+    "developmentQuality": 92,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe",
+      "latinAmerica"
+    ],
+    "driverSlots": 8
+  },
+  {
+    "id": "mercedes",
+    "name": "Mercedes Junior Team",
+    "reputation": 92,
+    "budget": 21000000,
+    "developmentQuality": 93,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 8
+  },
+  {
+    "id": "mclaren",
+    "name": "McLaren Driver Development",
+    "reputation": 91,
+    "budget": 19000000,
+    "developmentQuality": 91,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 8
+  },
+  {
+    "id": "williams",
+    "name": "Williams Driver Academy",
+    "reputation": 84,
+    "budget": 12000000,
+    "developmentQuality": 85,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "alpine",
+    "name": "Alpine Academy",
+    "reputation": 86,
+    "budget": 14000000,
+    "developmentQuality": 87,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "sauber",
+    "name": "Sauber Academy",
+    "reputation": 80,
+    "budget": 9000000,
+    "developmentQuality": 82,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "aston-martin",
+    "name": "Aston Martin Driver Development",
+    "reputation": 83,
+    "budget": 11000000,
+    "developmentQuality": 84,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2",
+      "apex-gp"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota Gazoo Racing Academy",
+    "reputation": 89,
+    "budget": 18000000,
+    "developmentQuality": 90,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 8
+  },
+  {
+    "id": "porsche",
+    "name": "Porsche Motorsport Junior",
+    "reputation": 88,
+    "budget": 17000000,
+    "developmentQuality": 89,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "indycar",
+    "name": "IndyCar Development Program",
+    "reputation": 82,
+    "budget": 10000000,
+    "developmentQuality": 83,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2"
+    ],
+    "aggressiveness": 95,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 7
+  },
+  {
+    "id": "independent",
+    "name": "Independent",
+    "reputation": 55,
+    "budget": 2500000,
+    "developmentQuality": 60,
+    "preferredCategories": [
+      "apex-3",
+      "apex-2"
+    ],
+    "aggressiveness": 52,
+    "preferredRegions": [
+      "europe"
+    ],
+    "driverSlots": 5
+  }
+]

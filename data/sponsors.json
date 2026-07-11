@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "aramco",
+    "name": "Aramco",
+    "industry": "energy",
+    "budget": 26000000,
+    "prestige": 92,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 38,
+    "marketRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "works_team",
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "experienced_grand_prix_driver"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "works_team",
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "dhl",
+    "name": "DHL",
+    "industry": "logistics",
+    "budget": 14000000,
+    "prestige": 84,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 55,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "consistent_racer"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  },
+  {
+    "id": "rolex",
+    "name": "Rolex",
+    "industry": "luxury",
+    "budget": 22000000,
+    "prestige": 96,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 28,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "world_champion"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "heineken",
+    "name": "Heineken",
+    "industry": "consumer",
+    "budget": 15000000,
+    "prestige": 86,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 52,
+    "marketRegions": [
+      "Europe",
+      "Americas"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Europe",
+      "Americas"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  },
+  {
+    "id": "pirelli",
+    "name": "Pirelli",
+    "industry": "tyres",
+    "budget": 18000000,
+    "prestige": 90,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2",
+      "apex-3"
+    ],
+    "riskTolerance": 45,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "technical_excellence"
+    ],
+    "preferredDriverTraits": [
+      "strong_feedback"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence"
+    ]
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "industry": "technology",
+    "budget": 17000000,
+    "prestige": 88,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 46,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "data_driven"
+    ],
+    "preferredDriverTraits": [
+      "strong_feedback"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "lenovo",
+    "name": "Lenovo",
+    "industry": "technology",
+    "budget": 13000000,
+    "prestige": 82,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 50,
+    "marketRegions": [
+      "Global",
+      "Asia"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "technical_excellence"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Asia"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence"
+    ]
+  },
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "industry": "technology",
+    "budget": 12000000,
+    "prestige": 81,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 48,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "budget_team"
+    ],
+    "preferredTeamProfiles": [
+      "commercial_focus"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "budget_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "commercial_focus"
+    ]
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle",
+    "industry": "technology",
+    "budget": 24000000,
+    "prestige": 93,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 42,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "data_driven"
+    ],
+    "preferredDriverTraits": [
+      "world_champion"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud",
+    "industry": "technology",
+    "budget": 19000000,
+    "prestige": 90,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 44,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "data_driven"
+    ],
+    "preferredDriverTraits": [
+      "strong_feedback"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "hp",
+    "name": "HP",
+    "industry": "technology",
+    "budget": 15000000,
+    "prestige": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 50,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "dell-technologies",
+    "name": "Dell Technologies",
+    "industry": "technology",
+    "budget": 14500000,
+    "prestige": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 48,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "data_driven"
+    ],
+    "preferredDriverTraits": [
+      "strong_feedback"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "cisco",
+    "name": "Cisco",
+    "industry": "technology",
+    "budget": 11000000,
+    "prestige": 78,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 44,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "budget_team"
+    ],
+    "preferredTeamProfiles": [
+      "technical_excellence"
+    ],
+    "preferredDriverTraits": [
+      "consistent_racer"
+    ],
+    "objectives": [
+      "budget_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "qualcomm",
+    "name": "Qualcomm",
+    "industry": "technology",
+    "budget": 13000000,
+    "prestige": 82,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 46,
+    "marketRegions": [
+      "Global",
+      "Americas"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "innovation"
+    ],
+    "preferredDriverTraits": [
+      "rookie_driver"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Americas"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence",
+      "manufacturer_project"
+    ]
+  },
+  {
+    "id": "santander",
+    "name": "Santander",
+    "industry": "finance",
+    "budget": 16000000,
+    "prestige": 86,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 45,
+    "marketRegions": [
+      "Europe",
+      "South America"
+    ],
+    "requirements": [
+      "national_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "national_driver"
+    ],
+    "preferredRegions": [
+      "Europe",
+      "South America"
+    ],
+    "preferredDriverNationalities": [
+      "Spain",
+      "Argentina",
+      "Mexico"
+    ],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "shell",
+    "name": "Shell",
+    "industry": "energy",
+    "budget": 23000000,
+    "prestige": 92,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 38,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "works_team"
+    ],
+    "preferredDriverTraits": [
+      "world_champion"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "works_team"
+    ]
+  },
+  {
+    "id": "petronas",
+    "name": "Petronas",
+    "industry": "energy",
+    "budget": 23000000,
+    "prestige": 91,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 38,
+    "marketRegions": [
+      "Global",
+      "Asia"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "works_team"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Asia"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "works_team"
+    ]
+  },
+  {
+    "id": "castrol",
+    "name": "Castrol",
+    "industry": "energy",
+    "budget": 12000000,
+    "prestige": 80,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 58,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "budget_team"
+    ],
+    "preferredTeamProfiles": [
+      "technical_excellence"
+    ],
+    "preferredDriverTraits": [
+      "strong_feedback"
+    ],
+    "objectives": [
+      "budget_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "technical_excellence"
+    ]
+  },
+  {
+    "id": "mobil-1",
+    "name": "Mobil 1",
+    "industry": "energy",
+    "budget": 18000000,
+    "prestige": 87,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 50,
+    "marketRegions": [
+      "Global",
+      "Americas"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "american_brand"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "northAmerica"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "american_brand"
+    ]
+  },
+  {
+    "id": "gulf",
+    "name": "Gulf",
+    "industry": "energy",
+    "budget": 10000000,
+    "prestige": 78,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 60,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "budget_team"
+    ],
+    "preferredTeamProfiles": [
+      "heritage_brand"
+    ],
+    "preferredDriverTraits": [
+      "consistent_racer"
+    ],
+    "objectives": [
+      "budget_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "heritage_brand"
+    ]
+  },
+  {
+    "id": "peroni",
+    "name": "Peroni",
+    "industry": "consumer",
+    "budget": 8000000,
+    "prestige": 72,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 62,
+    "marketRegions": [
+      "Europe"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Europe"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "monster-energy",
+    "name": "Monster Energy",
+    "industry": "consumer",
+    "budget": 14000000,
+    "prestige": 82,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 75,
+    "marketRegions": [
+      "Global",
+      "Americas"
+    ],
+    "requirements": [
+      "rookie_driver"
+    ],
+    "preferredTeamProfiles": [
+      "youth_development"
+    ],
+    "preferredDriverTraits": [
+      "aggressive_attacker"
+    ],
+    "objectives": [
+      "rookie_driver"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Americas"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "youth_development",
+      "aggressive_results"
+    ]
+  },
+  {
+    "id": "red-bull",
+    "name": "Red Bull",
+    "industry": "consumer",
+    "budget": 25000000,
+    "prestige": 94,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2",
+      "apex-3"
+    ],
+    "riskTolerance": 70,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "rookie_driver"
+    ],
+    "preferredTeamProfiles": [
+      "youth_development"
+    ],
+    "preferredDriverTraits": [
+      "aggressive_attacker"
+    ],
+    "objectives": [
+      "rookie_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "youth_development",
+      "aggressive_results"
+    ]
+  },
+  {
+    "id": "visa",
+    "name": "Visa",
+    "industry": "finance",
+    "budget": 18000000,
+    "prestige": 88,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 50,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "commercial_focus"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "northAmerica"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "commercial_focus"
+    ]
+  },
+  {
+    "id": "mastercard",
+    "name": "Mastercard",
+    "industry": "finance",
+    "budget": 17000000,
+    "prestige": 87,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 50,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "commercial_focus"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "northAmerica"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "commercial_focus"
+    ]
+  },
+  {
+    "id": "tag-heuer",
+    "name": "TAG Heuer",
+    "industry": "luxury",
+    "budget": 13000000,
+    "prestige": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 42,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "world_champion"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "tudor",
+    "name": "Tudor",
+    "industry": "luxury",
+    "budget": 9000000,
+    "prestige": 76,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 40,
+    "marketRegions": [
+      "Europe"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Europe"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "richard-mille",
+    "name": "Richard Mille",
+    "industry": "luxury",
+    "budget": 16000000,
+    "prestige": 89,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 30,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "world_champion"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "iwc",
+    "name": "IWC",
+    "industry": "luxury",
+    "budget": 13000000,
+    "prestige": 85,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 36,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "puma",
+    "name": "Puma",
+    "industry": "apparel",
+    "budget": 9000000,
+    "prestige": 76,
+    "preferredCategories": [
+      "apex-gp",
+      "apex-2"
+    ],
+    "riskTolerance": 62,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "youth_development"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "youth_development"
+    ]
+  },
+  {
+    "id": "adidas",
+    "name": "Adidas",
+    "industry": "apparel",
+    "budget": 15000000,
+    "prestige": 86,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 58,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "tommy-hilfiger",
+    "name": "Tommy Hilfiger",
+    "industry": "apparel",
+    "budget": 10000000,
+    "prestige": 80,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 54,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "hugo-boss",
+    "name": "Hugo Boss",
+    "industry": "apparel",
+    "budget": 12000000,
+    "prestige": 83,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 45,
+    "marketRegions": [
+      "Global"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "premium_brand"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "premium_brand"
+    ]
+  },
+  {
+    "id": "emirates",
+    "name": "Emirates",
+    "industry": "airline",
+    "budget": 20000000,
+    "prestige": 90,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 44,
+    "marketRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "requirements": [
+      "championship_contender"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "championship_contender"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  },
+  {
+    "id": "qatar-airways",
+    "name": "Qatar Airways",
+    "industry": "airline",
+    "budget": 19000000,
+    "prestige": 89,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 44,
+    "marketRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "requirements": [
+      "top_3_team"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "professional"
+    ],
+    "objectives": [
+      "top_3_team"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  },
+  {
+    "id": "etihad",
+    "name": "Etihad",
+    "industry": "airline",
+    "budget": 15000000,
+    "prestige": 84,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 46,
+    "marketRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "requirements": [
+      "high_marketability_driver"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "sponsor_magnet"
+    ],
+    "objectives": [
+      "high_marketability_driver"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Middle East"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  },
+  {
+    "id": "msc-cruises",
+    "name": "MSC Cruises",
+    "industry": "travel",
+    "budget": 12000000,
+    "prestige": 80,
+    "preferredCategories": [
+      "apex-gp"
+    ],
+    "riskTolerance": 55,
+    "marketRegions": [
+      "Global",
+      "Europe"
+    ],
+    "requirements": [
+      "budget_team"
+    ],
+    "preferredTeamProfiles": [
+      "global_reach"
+    ],
+    "preferredDriverTraits": [
+      "consistent_racer"
+    ],
+    "objectives": [
+      "budget_team"
+    ],
+    "preferredRegions": [
+      "Global",
+      "Europe"
+    ],
+    "preferredDriverNationalities": [],
+    "preferredTeamPhilosophies": [
+      "global_reach"
+    ]
+  }
+]

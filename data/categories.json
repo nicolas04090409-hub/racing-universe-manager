@@ -1,0 +1,241 @@
+[
+  {
+    "id": "apex-3",
+    "name": "Apex Formula 3",
+    "shortName": "Apex F3",
+    "realEquivalent": "FIA Formula 3",
+    "level": 3,
+    "prestige": 48,
+    "teams": 8,
+    "driversPerTeam": 2,
+    "calendar": [
+      "bahrain",
+      "albert-park",
+      "imola",
+      "monaco",
+      "barcelona",
+      "red-bull-ring",
+      "silverstone",
+      "hungaroring",
+      "spa",
+      "monza"
+    ],
+    "pointsSystem": [
+      25,
+      18,
+      15,
+      12,
+      10,
+      8,
+      6,
+      4,
+      2,
+      1
+    ],
+    "raceRules": {
+      "lapsFactor": 0.72,
+      "baseReliabilityRisk": 0.055,
+      "weatherChangeChance": 0.3,
+      "randomness": 10,
+      "weights": {
+        "car": 0.34,
+        "speed": 0.13,
+        "qualifying": 0.08,
+        "racePace": 0.16,
+        "consistency": 0.08,
+        "experience": 0.06,
+        "aggression": 0.04,
+        "circuitAdaptation": 0.06,
+        "strategy": 0.05
+      },
+      "weekendFormat": [
+        "practice",
+        "qualifying",
+        "race"
+      ],
+      "qualifyingFormat": "single",
+      "tyreCompounds": [
+        "soft",
+        "medium",
+        "hard",
+        "intermediate",
+        "wet"
+      ],
+      "mandatoryPitStops": 0
+    },
+    "developmentRules": {
+      "youngAgeMax": 21,
+      "peakAgeStart": 24,
+      "declineAge": 30,
+      "maxSeasonGrowth": 6,
+      "declineRate": 2
+    },
+    "promotionWeight": 0.9
+  },
+  {
+    "id": "apex-2",
+    "name": "Apex Formula 2",
+    "shortName": "Apex F2",
+    "realEquivalent": "FIA Formula 2",
+    "level": 2,
+    "prestige": 72,
+    "teams": 10,
+    "driversPerTeam": 2,
+    "calendar": [
+      "bahrain",
+      "jeddah",
+      "albert-park",
+      "imola",
+      "monaco",
+      "barcelona",
+      "red-bull-ring",
+      "silverstone",
+      "hungaroring",
+      "spa",
+      "monza",
+      "baku",
+      "lusail",
+      "yas-marina"
+    ],
+    "pointsSystem": [
+      25,
+      18,
+      15,
+      12,
+      10,
+      8,
+      6,
+      4,
+      2,
+      1
+    ],
+    "raceRules": {
+      "lapsFactor": 0.82,
+      "baseReliabilityRisk": 0.04,
+      "weatherChangeChance": 0.28,
+      "randomness": 8,
+      "weights": {
+        "car": 0.34,
+        "speed": 0.13,
+        "qualifying": 0.08,
+        "racePace": 0.16,
+        "consistency": 0.08,
+        "experience": 0.06,
+        "aggression": 0.04,
+        "circuitAdaptation": 0.06,
+        "strategy": 0.05
+      },
+      "weekendFormat": [
+        "practice",
+        "qualifying",
+        "race"
+      ],
+      "qualifyingFormat": "single",
+      "tyreCompounds": [
+        "soft",
+        "medium",
+        "hard",
+        "intermediate",
+        "wet"
+      ],
+      "mandatoryPitStops": 1
+    },
+    "developmentRules": {
+      "youngAgeMax": 22,
+      "peakAgeStart": 25,
+      "declineAge": 31,
+      "maxSeasonGrowth": 5,
+      "declineRate": 2
+    },
+    "promotionWeight": 0.7
+  },
+  {
+    "id": "apex-gp",
+    "name": "Apex Grand Prix",
+    "shortName": "Apex GP",
+    "realEquivalent": "Formula 1",
+    "level": 1,
+    "prestige": 100,
+    "teams": 11,
+    "driversPerTeam": 2,
+    "calendar": [
+      "bahrain",
+      "jeddah",
+      "albert-park",
+      "suzuka",
+      "shanghai",
+      "miami",
+      "imola",
+      "monaco",
+      "barcelona",
+      "montreal",
+      "red-bull-ring",
+      "silverstone",
+      "hungaroring",
+      "spa",
+      "zandvoort",
+      "monza",
+      "baku",
+      "singapore",
+      "cota",
+      "mexico",
+      "interlagos",
+      "las-vegas",
+      "lusail",
+      "yas-marina"
+    ],
+    "pointsSystem": [
+      25,
+      18,
+      15,
+      12,
+      10,
+      8,
+      6,
+      4,
+      2,
+      1
+    ],
+    "raceRules": {
+      "lapsFactor": 1,
+      "baseReliabilityRisk": 0.025,
+      "weatherChangeChance": 0.24,
+      "randomness": 5.5,
+      "weights": {
+        "car": 0.38,
+        "speed": 0.13,
+        "qualifying": 0.08,
+        "racePace": 0.16,
+        "consistency": 0.08,
+        "experience": 0.08,
+        "aggression": 0.04,
+        "circuitAdaptation": 0.04,
+        "strategy": 0.05
+      },
+      "weekendFormat": [
+        "fp1",
+        "fp2",
+        "fp3",
+        "qualifying",
+        "race"
+      ],
+      "qualifyingFormat": "q1_q2_q3",
+      "tyreCompounds": [
+        "soft",
+        "medium",
+        "hard",
+        "intermediate",
+        "wet"
+      ],
+      "mandatoryPitStops": 1
+    },
+    "developmentRules": {
+      "youngAgeMax": 23,
+      "peakAgeStart": 27,
+      "declineAge": 33,
+      "maxSeasonGrowth": 3,
+      "declineRate": 2.5
+    },
+    "promotionWeight": 0.45
+  }
+]

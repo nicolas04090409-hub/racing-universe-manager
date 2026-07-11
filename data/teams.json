@@ -1,0 +1,2780 @@
+[
+  {
+    "id": "f3-prema",
+    "name": "PREMA Racing F3",
+    "shortName": "PRE",
+    "categoryId": "apex-3",
+    "color": "#e31b23",
+    "budget": 6000000,
+    "reputation": 74,
+    "facilitiesLevel": 75,
+    "carPerformance": 75,
+    "reliability": 74,
+    "aerodynamics": 75,
+    "engine": 76,
+    "chassis": 75,
+    "strategy": 74,
+    "pitCrew": 73,
+    "drivers": [
+      "noel-leon",
+      "tasanapol-inthraphuvasak"
+    ],
+    "academyId": "ferrari",
+    "manufacturerPartner": "Ferrari",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 76,
+      "rearWing": 73,
+      "floor": 77,
+      "suspension": 75,
+      "chassis": 75,
+      "engine": 76,
+      "ers": 75,
+      "cooling": 74,
+      "brakes": 74,
+      "gearbox": 73,
+      "weight": 75,
+      "reliability": 74
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "ferrari",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "shell",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 74,
+    "pitCrewStrength": 73,
+    "setupQuality": 64,
+    "reliabilityRisk": 26,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-trident",
+    "name": "Trident F3",
+    "shortName": "TRI",
+    "categoryId": "apex-3",
+    "color": "#1f2937",
+    "budget": 5790000,
+    "reputation": 76,
+    "facilitiesLevel": 75,
+    "carPerformance": 76,
+    "reliability": 75,
+    "aerodynamics": 77,
+    "engine": 76,
+    "chassis": 76,
+    "strategy": 75,
+    "pitCrew": 74,
+    "drivers": [
+      "brando-badoer",
+      "tuukka-taponen"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "Trident",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 75,
+      "rearWing": 77,
+      "floor": 79,
+      "suspension": 76,
+      "chassis": 76,
+      "engine": 76,
+      "ers": 75,
+      "cooling": 75,
+      "brakes": 75,
+      "gearbox": 74,
+      "weight": 76,
+      "reliability": 75
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 75,
+    "pitCrewStrength": 74,
+    "setupQuality": 65,
+    "reliabilityRisk": 25,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-campos",
+    "name": "Campos Racing F3",
+    "shortName": "CAM",
+    "categoryId": "apex-3",
+    "color": "#f5c400",
+    "budget": 5580000,
+    "reputation": 73,
+    "facilitiesLevel": 74,
+    "carPerformance": 73,
+    "reliability": 74,
+    "aerodynamics": 73,
+    "engine": 74,
+    "chassis": 73,
+    "strategy": 74,
+    "pitCrew": 73,
+    "drivers": [
+      "ugo-ugochukwu",
+      "james-wharton"
+    ],
+    "academyId": "red-bull",
+    "manufacturerPartner": "Campos",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 75,
+      "rearWing": 72,
+      "floor": 75,
+      "suspension": 73,
+      "chassis": 73,
+      "engine": 74,
+      "ers": 73,
+      "cooling": 74,
+      "brakes": 72,
+      "gearbox": 73,
+      "weight": 73,
+      "reliability": 74
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "evitar último puesto",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 74,
+    "pitCrewStrength": 73,
+    "setupQuality": 64,
+    "reliabilityRisk": 26,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-mp",
+    "name": "MP Motorsport F3",
+    "shortName": "MPM",
+    "categoryId": "apex-3",
+    "color": "#f97316",
+    "budget": 5370000,
+    "reputation": 72,
+    "facilitiesLevel": 73,
+    "carPerformance": 72,
+    "reliability": 73,
+    "aerodynamics": 73,
+    "engine": 72,
+    "chassis": 72,
+    "strategy": 73,
+    "pitCrew": 72,
+    "drivers": [
+      "callum-voisin",
+      "christian-ho"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "MP",
+    "teamPhilosophy": "balanced",
+    "carDevelopment": {
+      "frontWing": 71,
+      "rearWing": 75,
+      "floor": 75,
+      "suspension": 72,
+      "chassis": 72,
+      "engine": 72,
+      "ers": 71,
+      "cooling": 73,
+      "brakes": 71,
+      "gearbox": 72,
+      "weight": 72,
+      "reliability": 73
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "evitar último puesto",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 73,
+    "pitCrewStrength": 72,
+    "setupQuality": 64,
+    "reliabilityRisk": 27,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-hitech",
+    "name": "Hitech TGR F3",
+    "shortName": "HIT",
+    "categoryId": "apex-3",
+    "color": "#6b7280",
+    "budget": 5160000,
+    "reputation": 74,
+    "facilitiesLevel": 74,
+    "carPerformance": 74,
+    "reliability": 74,
+    "aerodynamics": 74,
+    "engine": 75,
+    "chassis": 74,
+    "strategy": 74,
+    "pitCrew": 73,
+    "drivers": [
+      "charlie-wurz",
+      "matias-zagazeta"
+    ],
+    "academyId": "toyota",
+    "manufacturerPartner": "Toyota",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 76,
+      "rearWing": 73,
+      "floor": 76,
+      "suspension": 74,
+      "chassis": 74,
+      "engine": 75,
+      "ers": 74,
+      "cooling": 74,
+      "brakes": 73,
+      "gearbox": 73,
+      "weight": 74,
+      "reliability": 74
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "toyota",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 74,
+    "pitCrewStrength": 73,
+    "setupQuality": 64,
+    "reliabilityRisk": 26,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-art",
+    "name": "ART Grand Prix F3",
+    "shortName": "ART",
+    "categoryId": "apex-3",
+    "color": "#d4d4d8",
+    "budget": 4950000,
+    "reputation": 73,
+    "facilitiesLevel": 74,
+    "carPerformance": 73,
+    "reliability": 74,
+    "aerodynamics": 74,
+    "engine": 73,
+    "chassis": 73,
+    "strategy": 74,
+    "pitCrew": 73,
+    "drivers": [
+      "theophile-nael",
+      "laurens-van-hoepen"
+    ],
+    "academyId": "mercedes",
+    "manufacturerPartner": "Mercedes",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 73,
+      "rearWing": 77,
+      "floor": 76,
+      "suspension": 73,
+      "chassis": 73,
+      "engine": 73,
+      "ers": 72,
+      "cooling": 74,
+      "brakes": 72,
+      "gearbox": 73,
+      "weight": 73,
+      "reliability": 74
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "mercedes",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "petronas",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 1900000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "evitar último puesto",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 74,
+    "pitCrewStrength": 73,
+    "setupQuality": 64,
+    "reliabilityRisk": 26,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-rodin",
+    "name": "Rodin Motorsport F3",
+    "shortName": "ROD",
+    "categoryId": "apex-3",
+    "color": "#7c3aed",
+    "budget": 4740000,
+    "reputation": 70,
+    "facilitiesLevel": 72,
+    "carPerformance": 70,
+    "reliability": 71,
+    "aerodynamics": 70,
+    "engine": 71,
+    "chassis": 70,
+    "strategy": 71,
+    "pitCrew": 70,
+    "drivers": [
+      "tim-tramnitz",
+      "emil-pedersen"
+    ],
+    "academyId": "mclaren",
+    "manufacturerPartner": "Rodin",
+    "teamPhilosophy": "commercial_focus",
+    "carDevelopment": {
+      "frontWing": 71,
+      "rearWing": 68,
+      "floor": 72,
+      "suspension": 70,
+      "chassis": 70,
+      "engine": 71,
+      "ers": 70,
+      "cooling": 71,
+      "brakes": 69,
+      "gearbox": 70,
+      "weight": 70,
+      "reliability": 71
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 1900000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "evitar último puesto",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 71,
+    "pitCrewStrength": 70,
+    "setupQuality": 63,
+    "reliabilityRisk": 29,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f3-var",
+    "name": "Van Amersfoort Racing F3",
+    "shortName": "VAR",
+    "categoryId": "apex-3",
+    "color": "#ef4444",
+    "budget": 4530000,
+    "reputation": 69,
+    "facilitiesLevel": 71,
+    "carPerformance": 69,
+    "reliability": 70,
+    "aerodynamics": 70,
+    "engine": 69,
+    "chassis": 69,
+    "strategy": 70,
+    "pitCrew": 69,
+    "drivers": [
+      "lucas-ferrer",
+      "wei-chen"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "VAR",
+    "teamPhilosophy": "budget_efficiency",
+    "carDevelopment": {
+      "frontWing": 69,
+      "rearWing": 73,
+      "floor": 72,
+      "suspension": 69,
+      "chassis": 69,
+      "engine": 69,
+      "ers": 68,
+      "cooling": 70,
+      "brakes": 68,
+      "gearbox": 69,
+      "weight": 69,
+      "reliability": 70
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 4114000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 1900000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "evitar último puesto",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 70,
+    "pitCrewStrength": 69,
+    "setupQuality": 63,
+    "reliabilityRisk": 30,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-prema",
+    "name": "PREMA Racing",
+    "shortName": "PRE",
+    "categoryId": "apex-2",
+    "color": "#e31b23",
+    "budget": 16000000,
+    "reputation": 82,
+    "facilitiesLevel": 80,
+    "carPerformance": 82,
+    "reliability": 81,
+    "aerodynamics": 82,
+    "engine": 83,
+    "chassis": 82,
+    "strategy": 81,
+    "pitCrew": 80,
+    "drivers": [
+      "rafael-camara",
+      "dino-beganovic"
+    ],
+    "academyId": "ferrari",
+    "manufacturerPartner": "Ferrari",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 83,
+      "rearWing": 80,
+      "floor": 84,
+      "suspension": 82,
+      "chassis": 82,
+      "engine": 83,
+      "ers": 82,
+      "cooling": 81,
+      "brakes": 81,
+      "gearbox": 80,
+      "weight": 82,
+      "reliability": 81
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 8,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "ferrari",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "shell",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3700000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 81,
+    "pitCrewStrength": 80,
+    "setupQuality": 73,
+    "reliabilityRisk": 19,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-hitech",
+    "name": "Hitech TGR",
+    "shortName": "HIT",
+    "categoryId": "apex-2",
+    "color": "#6b7280",
+    "budget": 15440000,
+    "reputation": 81,
+    "facilitiesLevel": 79,
+    "carPerformance": 81,
+    "reliability": 80,
+    "aerodynamics": 82,
+    "engine": 81,
+    "chassis": 81,
+    "strategy": 80,
+    "pitCrew": 79,
+    "drivers": [
+      "gabriele-mini",
+      "sebastian-montoya"
+    ],
+    "academyId": "toyota",
+    "manufacturerPartner": "Toyota",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 84,
+      "rearWing": 81,
+      "floor": 84,
+      "suspension": 81,
+      "chassis": 81,
+      "engine": 81,
+      "ers": 80,
+      "cooling": 80,
+      "brakes": 80,
+      "gearbox": 79,
+      "weight": 81,
+      "reliability": 80
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "toyota",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3700000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 80,
+    "pitCrewStrength": 79,
+    "setupQuality": 73,
+    "reliabilityRisk": 20,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-campos",
+    "name": "Campos Racing",
+    "shortName": "CAM",
+    "categoryId": "apex-2",
+    "color": "#f5c400",
+    "budget": 14880000,
+    "reputation": 80,
+    "facilitiesLevel": 78,
+    "carPerformance": 80,
+    "reliability": 79,
+    "aerodynamics": 80,
+    "engine": 81,
+    "chassis": 80,
+    "strategy": 79,
+    "pitCrew": 78,
+    "drivers": [
+      "luke-browning",
+      "sami-meguetounif"
+    ],
+    "academyId": "red-bull",
+    "manufacturerPartner": "Campos",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 82,
+      "rearWing": 79,
+      "floor": 82,
+      "suspension": 80,
+      "chassis": 80,
+      "engine": 81,
+      "ers": 80,
+      "cooling": 79,
+      "brakes": 79,
+      "gearbox": 78,
+      "weight": 80,
+      "reliability": 79
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 8,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3700000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2100000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 79,
+    "pitCrewStrength": 78,
+    "setupQuality": 73,
+    "reliabilityRisk": 21,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-art",
+    "name": "ART Grand Prix",
+    "shortName": "ART",
+    "categoryId": "apex-2",
+    "color": "#d4d4d8",
+    "budget": 14320000,
+    "reputation": 82,
+    "facilitiesLevel": 81,
+    "carPerformance": 80,
+    "reliability": 81,
+    "aerodynamics": 81,
+    "engine": 80,
+    "chassis": 80,
+    "strategy": 81,
+    "pitCrew": 80,
+    "drivers": [
+      "joshua-durksen",
+      "ritomo-miyata"
+    ],
+    "academyId": "mercedes",
+    "manufacturerPartner": "Mercedes",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 80,
+      "rearWing": 84,
+      "floor": 83,
+      "suspension": 80,
+      "chassis": 80,
+      "engine": 80,
+      "ers": 79,
+      "cooling": 81,
+      "brakes": 79,
+      "gearbox": 80,
+      "weight": 80,
+      "reliability": 81
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "mercedes",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "petronas",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3700000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 81,
+    "pitCrewStrength": 80,
+    "setupQuality": 73,
+    "reliabilityRisk": 19,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-dams",
+    "name": "DAMS Lucas Oil",
+    "shortName": "DAM",
+    "categoryId": "apex-2",
+    "color": "#0068b5",
+    "budget": 13760000,
+    "reputation": 78,
+    "facilitiesLevel": 79,
+    "carPerformance": 78,
+    "reliability": 79,
+    "aerodynamics": 78,
+    "engine": 79,
+    "chassis": 78,
+    "strategy": 79,
+    "pitCrew": 78,
+    "drivers": [
+      "richard-verschoor",
+      "victor-martins"
+    ],
+    "academyId": "alpine",
+    "manufacturerPartner": "Renault",
+    "teamPhilosophy": "balanced",
+    "carDevelopment": {
+      "frontWing": 78,
+      "rearWing": 75,
+      "floor": 80,
+      "suspension": 78,
+      "chassis": 78,
+      "engine": 79,
+      "ers": 78,
+      "cooling": 79,
+      "brakes": 77,
+      "gearbox": 78,
+      "weight": 78,
+      "reliability": 79
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "renault-alpine",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3700000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 79,
+    "pitCrewStrength": 78,
+    "setupQuality": 73,
+    "reliabilityRisk": 21,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-mp",
+    "name": "MP Motorsport",
+    "shortName": "MPM",
+    "categoryId": "apex-2",
+    "color": "#f97316",
+    "budget": 13200000,
+    "reputation": 79,
+    "facilitiesLevel": 78,
+    "carPerformance": 79,
+    "reliability": 78,
+    "aerodynamics": 80,
+    "engine": 79,
+    "chassis": 79,
+    "strategy": 78,
+    "pitCrew": 77,
+    "drivers": [
+      "oliver-goethe",
+      "jak-crawford"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "MP",
+    "teamPhilosophy": "budget_efficiency",
+    "carDevelopment": {
+      "frontWing": 78,
+      "rearWing": 82,
+      "floor": 82,
+      "suspension": 79,
+      "chassis": 79,
+      "engine": 79,
+      "ers": 78,
+      "cooling": 78,
+      "brakes": 78,
+      "gearbox": 77,
+      "weight": 79,
+      "reliability": 78
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3600000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 78,
+    "pitCrewStrength": 77,
+    "setupQuality": 72,
+    "reliabilityRisk": 22,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-invicta",
+    "name": "Invicta Racing",
+    "shortName": "INV",
+    "categoryId": "apex-2",
+    "color": "#ffd400",
+    "budget": 12640000,
+    "reputation": 83,
+    "facilitiesLevel": 81,
+    "carPerformance": 83,
+    "reliability": 82,
+    "aerodynamics": 83,
+    "engine": 84,
+    "chassis": 83,
+    "strategy": 82,
+    "pitCrew": 81,
+    "drivers": [
+      "roman-stanek",
+      "amaury-cordeel"
+    ],
+    "academyId": "sauber",
+    "manufacturerPartner": "Renault",
+    "teamPhilosophy": "balanced",
+    "carDevelopment": {
+      "frontWing": 81,
+      "rearWing": 83,
+      "floor": 85,
+      "suspension": 83,
+      "chassis": 83,
+      "engine": 84,
+      "ers": 83,
+      "cooling": 82,
+      "brakes": 82,
+      "gearbox": 81,
+      "weight": 83,
+      "reliability": 82
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "renault-alpine",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3600000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 82,
+    "pitCrewStrength": 81,
+    "setupQuality": 74,
+    "reliabilityRisk": 18,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-trident",
+    "name": "Trident",
+    "shortName": "TRI",
+    "categoryId": "apex-2",
+    "color": "#1f2937",
+    "budget": 12080000,
+    "reputation": 76,
+    "facilitiesLevel": 77,
+    "carPerformance": 76,
+    "reliability": 77,
+    "aerodynamics": 77,
+    "engine": 76,
+    "chassis": 76,
+    "strategy": 77,
+    "pitCrew": 76,
+    "drivers": [
+      "pepe-marti",
+      "alex-dunne"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "Trident",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 75,
+      "rearWing": 77,
+      "floor": 79,
+      "suspension": 76,
+      "chassis": 76,
+      "engine": 76,
+      "ers": 75,
+      "cooling": 77,
+      "brakes": 75,
+      "gearbox": 76,
+      "weight": 76,
+      "reliability": 77
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3600000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 77,
+    "pitCrewStrength": 76,
+    "setupQuality": 65,
+    "reliabilityRisk": 23,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-rodin",
+    "name": "Rodin Motorsport",
+    "shortName": "ROD",
+    "categoryId": "apex-2",
+    "color": "#7c3aed",
+    "budget": 11520000,
+    "reputation": 77,
+    "facilitiesLevel": 78,
+    "carPerformance": 77,
+    "reliability": 77,
+    "aerodynamics": 77,
+    "engine": 78,
+    "chassis": 77,
+    "strategy": 77,
+    "pitCrew": 76,
+    "drivers": [
+      "martinius-stenshorne",
+      "nikola-tsolov"
+    ],
+    "academyId": "mclaren",
+    "manufacturerPartner": "Rodin",
+    "teamPhilosophy": "commercial_focus",
+    "carDevelopment": {
+      "frontWing": 78,
+      "rearWing": 75,
+      "floor": 79,
+      "suspension": 77,
+      "chassis": 77,
+      "engine": 78,
+      "ers": 77,
+      "cooling": 77,
+      "brakes": 76,
+      "gearbox": 76,
+      "weight": 77,
+      "reliability": 77
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3600000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 2000000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 77,
+    "pitCrewStrength": 76,
+    "setupQuality": 72,
+    "reliabilityRisk": 23,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "f2-var",
+    "name": "Van Amersfoort Racing",
+    "shortName": "VAR",
+    "categoryId": "apex-2",
+    "color": "#ef4444",
+    "budget": 10960000,
+    "reputation": 75,
+    "facilitiesLevel": 76,
+    "carPerformance": 75,
+    "reliability": 76,
+    "aerodynamics": 76,
+    "engine": 75,
+    "chassis": 75,
+    "strategy": 76,
+    "pitCrew": 75,
+    "drivers": [
+      "rafael-villagomez",
+      "nicolas-varrone"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "VAR",
+    "teamPhilosophy": "budget_efficiency",
+    "carDevelopment": {
+      "frontWing": 75,
+      "rearWing": 79,
+      "floor": 78,
+      "suspension": 75,
+      "chassis": 75,
+      "engine": 75,
+      "ers": 74,
+      "cooling": 76,
+      "brakes": 74,
+      "gearbox": 75,
+      "weight": 75,
+      "reliability": 76
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 6,
+      "academyCenter": 6,
+      "medicalCenter": 6,
+      "commercialDepartment": 6
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cosworth",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 7770000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 3600000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 64
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 1900000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 60
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 76,
+    "pitCrewStrength": 75,
+    "setupQuality": 65,
+    "reliabilityRisk": 24,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-red-bull",
+    "name": "Red Bull Racing",
+    "shortName": "RBR",
+    "categoryId": "apex-gp",
+    "color": "#1e41ff",
+    "budget": 85000000,
+    "reputation": 90,
+    "facilitiesLevel": 92,
+    "carPerformance": 91,
+    "reliability": 91,
+    "aerodynamics": 91,
+    "engine": 92,
+    "chassis": 91,
+    "strategy": 91,
+    "pitCrew": 90,
+    "drivers": [
+      "max-verstappen",
+      "isack-hadjar"
+    ],
+    "academyId": "red-bull",
+    "manufacturerPartner": "Honda RBPT",
+    "teamPhilosophy": "aggressive_results",
+    "carDevelopment": {
+      "frontWing": 90,
+      "rearWing": 92,
+      "floor": 93,
+      "suspension": 91,
+      "chassis": 91,
+      "engine": 92,
+      "ers": 91,
+      "cooling": 91,
+      "brakes": 90,
+      "gearbox": 90,
+      "weight": 91,
+      "reliability": 91
+    },
+    "facilities": {
+      "headquarters": 8,
+      "factory": 8,
+      "windTunnel": 9,
+      "cfdCenter": 8,
+      "simulator": 8,
+      "strategyRoom": 8,
+      "pitTrainingCenter": 8,
+      "academyCenter": 8,
+      "medicalCenter": 8,
+      "commercialDepartment": 8
+    },
+    "supplierContracts": {
+      "engineSupplierId": "honda",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 17300000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "oracle",
+        "valuePerSeason": 12500000,
+        "bonusConditions": [
+          "championship_contender"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 90
+      },
+      {
+        "sponsorId": "red-bull",
+        "valuePerSeason": 8400000,
+        "bonusConditions": [
+          "rookie_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 86
+      },
+      {
+        "sponsorId": "mobil-1",
+        "valuePerSeason": 6700000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 82
+      },
+      {
+        "sponsorId": "tag-heuer",
+        "valuePerSeason": 5400000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 78
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 3",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 91,
+    "pitCrewStrength": 90,
+    "setupQuality": 83,
+    "reliabilityRisk": 9,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.1
+  },
+  {
+    "id": "gp-ferrari",
+    "name": "Scuderia Ferrari",
+    "shortName": "FER",
+    "categoryId": "apex-gp",
+    "color": "#e8002d",
+    "budget": 82025000,
+    "reputation": 92,
+    "facilitiesLevel": 91,
+    "carPerformance": 93,
+    "reliability": 92,
+    "aerodynamics": 94,
+    "engine": 93,
+    "chassis": 93,
+    "strategy": 92,
+    "pitCrew": 91,
+    "drivers": [
+      "charles-leclerc",
+      "lewis-hamilton"
+    ],
+    "academyId": "ferrari",
+    "manufacturerPartner": "Ferrari",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 92,
+      "rearWing": 94,
+      "floor": 96,
+      "suspension": 93,
+      "chassis": 93,
+      "engine": 93,
+      "ers": 92,
+      "cooling": 92,
+      "brakes": 92,
+      "gearbox": 91,
+      "weight": 93,
+      "reliability": 92
+    },
+    "facilities": {
+      "headquarters": 8,
+      "factory": 8,
+      "windTunnel": 9,
+      "cfdCenter": 8,
+      "simulator": 8,
+      "strategyRoom": 8,
+      "pitTrainingCenter": 8,
+      "academyCenter": 8,
+      "medicalCenter": 8,
+      "commercialDepartment": 8
+    },
+    "supplierContracts": {
+      "engineSupplierId": "ferrari",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "shell",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 17300000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "shell",
+        "valuePerSeason": 12200000,
+        "bonusConditions": [
+          "championship_contender"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 90.66666666666667
+      },
+      {
+        "sponsorId": "santander",
+        "valuePerSeason": 6200000,
+        "bonusConditions": [
+          "national_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 86.66666666666667
+      },
+      {
+        "sponsorId": "hp",
+        "valuePerSeason": 5900000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 82.66666666666667
+      },
+      {
+        "sponsorId": "richard-mille",
+        "valuePerSeason": 6200000,
+        "bonusConditions": [
+          "championship_contender"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 78.66666666666667
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 3",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 92,
+    "pitCrewStrength": 91,
+    "setupQuality": 84,
+    "reliabilityRisk": 8,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.1
+  },
+  {
+    "id": "gp-mercedes",
+    "name": "Mercedes-AMG",
+    "shortName": "MER",
+    "categoryId": "apex-gp",
+    "color": "#27f4d2",
+    "budget": 79050000,
+    "reputation": 91,
+    "facilitiesLevel": 93,
+    "carPerformance": 91,
+    "reliability": 92,
+    "aerodynamics": 91,
+    "engine": 92,
+    "chassis": 91,
+    "strategy": 92,
+    "pitCrew": 91,
+    "drivers": [
+      "george-russell",
+      "kimi-antonelli"
+    ],
+    "academyId": "mercedes",
+    "manufacturerPartner": "Mercedes",
+    "teamPhilosophy": "technical_excellence",
+    "carDevelopment": {
+      "frontWing": 90,
+      "rearWing": 92,
+      "floor": 93,
+      "suspension": 91,
+      "chassis": 91,
+      "engine": 92,
+      "ers": 91,
+      "cooling": 92,
+      "brakes": 90,
+      "gearbox": 91,
+      "weight": 91,
+      "reliability": 92
+    },
+    "facilities": {
+      "headquarters": 8,
+      "factory": 8,
+      "windTunnel": 9,
+      "cfdCenter": 8,
+      "simulator": 8,
+      "strategyRoom": 8,
+      "pitTrainingCenter": 8,
+      "academyCenter": 8,
+      "medicalCenter": 8,
+      "commercialDepartment": 8
+    },
+    "supplierContracts": {
+      "engineSupplierId": "mercedes",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "petronas",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 17300000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "petronas",
+        "valuePerSeason": 12000000,
+        "bonusConditions": [
+          "championship_contender"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 90.33333333333333
+      },
+      {
+        "sponsorId": "iwc",
+        "valuePerSeason": 5300000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 86.33333333333333
+      },
+      {
+        "sponsorId": "tommy-hilfiger",
+        "valuePerSeason": 4500000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 82.33333333333333
+      },
+      {
+        "sponsorId": "adidas",
+        "valuePerSeason": 5800000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 78.33333333333333
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 3",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 92,
+    "pitCrewStrength": 91,
+    "setupQuality": 84,
+    "reliabilityRisk": 8,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.1
+  },
+  {
+    "id": "gp-mclaren",
+    "name": "McLaren Racing",
+    "shortName": "MCL",
+    "categoryId": "apex-gp",
+    "color": "#ff8000",
+    "budget": 76075000,
+    "reputation": 94,
+    "facilitiesLevel": 91,
+    "carPerformance": 94,
+    "reliability": 93,
+    "aerodynamics": 95,
+    "engine": 94,
+    "chassis": 94,
+    "strategy": 93,
+    "pitCrew": 92,
+    "drivers": [
+      "lando-norris",
+      "oscar-piastri"
+    ],
+    "academyId": "mclaren",
+    "manufacturerPartner": "Mercedes",
+    "teamPhilosophy": "balanced",
+    "carDevelopment": {
+      "frontWing": 93,
+      "rearWing": 95,
+      "floor": 97,
+      "suspension": 94,
+      "chassis": 94,
+      "engine": 94,
+      "ers": 93,
+      "cooling": 93,
+      "brakes": 93,
+      "gearbox": 92,
+      "weight": 94,
+      "reliability": 93
+    },
+    "facilities": {
+      "headquarters": 8,
+      "factory": 8,
+      "windTunnel": 9,
+      "cfdCenter": 8,
+      "simulator": 8,
+      "strategyRoom": 8,
+      "pitTrainingCenter": 8,
+      "academyCenter": 8,
+      "medicalCenter": 8,
+      "commercialDepartment": 8
+    },
+    "supplierContracts": {
+      "engineSupplierId": "mercedes",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "petronas",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 17300000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "google-cloud",
+        "valuePerSeason": 10500000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 91.33333333333333
+      },
+      {
+        "sponsorId": "dell-technologies",
+        "valuePerSeason": 5700000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 87.33333333333333
+      },
+      {
+        "sponsorId": "mastercard",
+        "valuePerSeason": 6400000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 83.33333333333333
+      },
+      {
+        "sponsorId": "monster-energy",
+        "valuePerSeason": 5600000,
+        "bonusConditions": [
+          "rookie_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 79.33333333333333
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 3",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 93,
+    "pitCrewStrength": 92,
+    "setupQuality": 84,
+    "reliabilityRisk": 7,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.1
+  },
+  {
+    "id": "gp-aston",
+    "name": "Aston Martin",
+    "shortName": "AMR",
+    "categoryId": "apex-gp",
+    "color": "#229971",
+    "budget": 73100000,
+    "reputation": 84,
+    "facilitiesLevel": 88,
+    "carPerformance": 85,
+    "reliability": 86,
+    "aerodynamics": 85,
+    "engine": 86,
+    "chassis": 85,
+    "strategy": 86,
+    "pitCrew": 85,
+    "drivers": [
+      "fernando-alonso",
+      "lance-stroll"
+    ],
+    "academyId": "aston-martin",
+    "manufacturerPartner": "Honda",
+    "teamPhilosophy": "star_drivers",
+    "carDevelopment": {
+      "frontWing": 86,
+      "rearWing": 83,
+      "floor": 87,
+      "suspension": 85,
+      "chassis": 85,
+      "engine": 86,
+      "ers": 85,
+      "cooling": 86,
+      "brakes": 84,
+      "gearbox": 85,
+      "weight": 85,
+      "reliability": 86
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "honda",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "aramco",
+        "valuePerSeason": 11900000,
+        "bonusConditions": [
+          "championship_contender"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 88
+      },
+      {
+        "sponsorId": "hugo-boss",
+        "valuePerSeason": 4300000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 84
+      },
+      {
+        "sponsorId": "castrol",
+        "valuePerSeason": 4300000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 80
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 86,
+    "pitCrewStrength": 85,
+    "setupQuality": 75,
+    "reliabilityRisk": 14,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-alpine",
+    "name": "Alpine Racing",
+    "shortName": "ALP",
+    "categoryId": "apex-gp",
+    "color": "#0093cc",
+    "budget": 70125000,
+    "reputation": 79,
+    "facilitiesLevel": 84,
+    "carPerformance": 80,
+    "reliability": 81,
+    "aerodynamics": 81,
+    "engine": 80,
+    "chassis": 80,
+    "strategy": 81,
+    "pitCrew": 80,
+    "drivers": [
+      "pierre-gasly",
+      "franco-colapinto"
+    ],
+    "academyId": "alpine",
+    "manufacturerPartner": "Renault",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 83,
+      "rearWing": 80,
+      "floor": 83,
+      "suspension": 80,
+      "chassis": 80,
+      "engine": 80,
+      "ers": 79,
+      "cooling": 81,
+      "brakes": 79,
+      "gearbox": 80,
+      "weight": 80,
+      "reliability": 81
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 8,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "renault-alpine",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "castrol",
+        "valuePerSeason": 8800000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 86.33333333333333
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 81,
+    "pitCrewStrength": 80,
+    "setupQuality": 73,
+    "reliabilityRisk": 19,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-haas",
+    "name": "Haas F1 Team",
+    "shortName": "HAS",
+    "categoryId": "apex-gp",
+    "color": "#b6babd",
+    "budget": 67150000,
+    "reputation": 81,
+    "facilitiesLevel": 86,
+    "carPerformance": 80,
+    "reliability": 82,
+    "aerodynamics": 80,
+    "engine": 81,
+    "chassis": 80,
+    "strategy": 82,
+    "pitCrew": 81,
+    "drivers": [
+      "esteban-ocon",
+      "oliver-bearman"
+    ],
+    "academyId": "ferrari",
+    "manufacturerPartner": "Ferrari",
+    "teamPhilosophy": "budget_efficiency",
+    "carDevelopment": {
+      "frontWing": 80,
+      "rearWing": 77,
+      "floor": 82,
+      "suspension": 80,
+      "chassis": 80,
+      "engine": 81,
+      "ers": 80,
+      "cooling": 82,
+      "brakes": 79,
+      "gearbox": 81,
+      "weight": 80,
+      "reliability": 82
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "ferrari",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "shell",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "pirelli",
+        "valuePerSeason": 11000000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 87
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 82,
+    "pitCrewStrength": 81,
+    "setupQuality": 74,
+    "reliabilityRisk": 18,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-racing-bulls",
+    "name": "Racing Bulls",
+    "shortName": "VCB",
+    "categoryId": "apex-gp",
+    "color": "#6692ff",
+    "budget": 64175000,
+    "reputation": 83,
+    "facilitiesLevel": 86,
+    "carPerformance": 84,
+    "reliability": 83,
+    "aerodynamics": 85,
+    "engine": 84,
+    "chassis": 84,
+    "strategy": 83,
+    "pitCrew": 82,
+    "drivers": [
+      "liam-lawson",
+      "arvid-lindblad"
+    ],
+    "academyId": "red-bull",
+    "manufacturerPartner": "Honda RBPT",
+    "teamPhilosophy": "youth_development",
+    "carDevelopment": {
+      "frontWing": 83,
+      "rearWing": 83,
+      "floor": 87,
+      "suspension": 84,
+      "chassis": 84,
+      "engine": 84,
+      "ers": 83,
+      "cooling": 83,
+      "brakes": 83,
+      "gearbox": 82,
+      "weight": 84,
+      "reliability": 83
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 8,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "honda",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "visa",
+        "valuePerSeason": 8500000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 87.66666666666667
+      },
+      {
+        "sponsorId": "red-bull",
+        "valuePerSeason": 7100000,
+        "bonusConditions": [
+          "rookie_driver"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 83.66666666666667
+      },
+      {
+        "sponsorId": "puma",
+        "valuePerSeason": 3400000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 79.66666666666667
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "desarrollar piloto joven",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 83,
+    "pitCrewStrength": 82,
+    "setupQuality": 74,
+    "reliabilityRisk": 17,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-williams",
+    "name": "Williams Racing",
+    "shortName": "WIL",
+    "categoryId": "apex-gp",
+    "color": "#00a3e0",
+    "budget": 61200000,
+    "reputation": 85,
+    "facilitiesLevel": 87,
+    "carPerformance": 84,
+    "reliability": 85,
+    "aerodynamics": 84,
+    "engine": 85,
+    "chassis": 84,
+    "strategy": 85,
+    "pitCrew": 84,
+    "drivers": [
+      "alexander-albon",
+      "carlos-sainz"
+    ],
+    "academyId": "williams",
+    "manufacturerPartner": "Mercedes",
+    "teamPhilosophy": "patient_project",
+    "carDevelopment": {
+      "frontWing": 83,
+      "rearWing": 85,
+      "floor": 86,
+      "suspension": 84,
+      "chassis": 84,
+      "engine": 85,
+      "ers": 84,
+      "cooling": 85,
+      "brakes": 83,
+      "gearbox": 84,
+      "weight": 84,
+      "reliability": 85
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 8,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "mercedes",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "petronas",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "gulf",
+        "valuePerSeason": 5900000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 88.33333333333333
+      },
+      {
+        "sponsorId": "dhl",
+        "valuePerSeason": 5200000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 84.33333333333333
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 85,
+    "pitCrewStrength": 84,
+    "setupQuality": 75,
+    "reliabilityRisk": 15,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-audi",
+    "name": "Audi F1 Team",
+    "shortName": "AUD",
+    "categoryId": "apex-gp",
+    "color": "#b6bbc4",
+    "budget": 58225000,
+    "reputation": 78,
+    "facilitiesLevel": 83,
+    "carPerformance": 79,
+    "reliability": 80,
+    "aerodynamics": 80,
+    "engine": 79,
+    "chassis": 79,
+    "strategy": 80,
+    "pitCrew": 79,
+    "drivers": [
+      "nico-hulkenberg",
+      "gabriel-bortoleto"
+    ],
+    "academyId": "sauber",
+    "manufacturerPartner": "Audi",
+    "teamPhilosophy": "manufacturer_project",
+    "carDevelopment": {
+      "frontWing": 82,
+      "rearWing": 79,
+      "floor": 82,
+      "suspension": 79,
+      "chassis": 79,
+      "engine": 79,
+      "ers": 78,
+      "cooling": 80,
+      "brakes": 78,
+      "gearbox": 79,
+      "weight": 79,
+      "reliability": 80
+    },
+    "facilities": {
+      "headquarters": 7,
+      "factory": 7,
+      "windTunnel": 7,
+      "cfdCenter": 7,
+      "simulator": 7,
+      "strategyRoom": 7,
+      "pitTrainingCenter": 7,
+      "academyCenter": 7,
+      "medicalCenter": 7,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "audi",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 20100000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "adidas",
+        "valuePerSeason": 6800000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 86
+      },
+      {
+        "sponsorId": "castrol",
+        "valuePerSeason": 3800000,
+        "bonusConditions": [
+          "budget_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 82
+      },
+      {
+        "sponsorId": "aws",
+        "valuePerSeason": 4900000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 78
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 6",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar al menos 2 componentes",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "mantener satisfacción de sponsors sobre 60"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 80,
+    "pitCrewStrength": 79,
+    "setupQuality": 73,
+    "reliabilityRisk": 20,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  },
+  {
+    "id": "gp-cadillac",
+    "name": "Cadillac GP",
+    "shortName": "CAD",
+    "categoryId": "apex-gp",
+    "color": "#1f6feb",
+    "budget": 78000000,
+    "reputation": 76,
+    "facilitiesLevel": 68,
+    "carPerformance": 74,
+    "reliability": 72,
+    "aerodynamics": 73,
+    "engine": 75,
+    "chassis": 74,
+    "strategy": 72,
+    "pitCrew": 71,
+    "drivers": [
+      "sergio-perez",
+      "valtteri-bottas"
+    ],
+    "academyId": "independent",
+    "manufacturerPartner": "Cadillac",
+    "teamPhilosophy": "manufacturer_project",
+    "carDevelopment": {
+      "frontWing": 73,
+      "rearWing": 73,
+      "floor": 74,
+      "suspension": 74,
+      "chassis": 74,
+      "engine": 76,
+      "ers": 74,
+      "cooling": 72,
+      "brakes": 73,
+      "gearbox": 72,
+      "weight": 73,
+      "reliability": 72
+    },
+    "facilities": {
+      "headquarters": 6,
+      "factory": 6,
+      "windTunnel": 6,
+      "cfdCenter": 6,
+      "simulator": 6,
+      "strategyRoom": 6,
+      "pitTrainingCenter": 5,
+      "academyCenter": 5,
+      "medicalCenter": 6,
+      "commercialDepartment": 7
+    },
+    "supplierContracts": {
+      "engineSupplierId": "cadillac",
+      "tyreSupplierId": "pirelli",
+      "fuelSupplierId": "mobil-1",
+      "electronicsSupplierId": "porsche",
+      "contractUntil": 2028,
+      "annualCost": 16800000
+    },
+    "sponsorContracts": [
+      {
+        "sponsorId": "mobil-1",
+        "valuePerSeason": 8900000,
+        "bonusConditions": [
+          "high_marketability_driver"
+        ],
+        "expiresAt": 2027,
+        "satisfaction": 85.33333333333333
+      },
+      {
+        "sponsorId": "dell-technologies",
+        "valuePerSeason": 5400000,
+        "bonusConditions": [
+          "top_3_team"
+        ],
+        "expiresAt": 2028,
+        "satisfaction": 81.33333333333333
+      }
+    ],
+    "seasonObjectives": {
+      "constructorsTarget": "terminar top 8",
+      "driversTarget": "sumar puntos regularmente",
+      "developmentTarget": "mejorar confiabilidad y motor",
+      "financeTarget": "mantener presupuesto positivo",
+      "sponsorTarget": "construir presencia comercial"
+    },
+    "developmentProjects": [],
+    "facilityProjects": [],
+    "strategyStrength": 72,
+    "pitCrewStrength": 71,
+    "setupQuality": 58,
+    "reliabilityRisk": 28,
+    "carPerformanceByCircuit": {},
+    "financialTargetMargin": 0.06
+  }
+]

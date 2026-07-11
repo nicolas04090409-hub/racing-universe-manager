@@ -1,0 +1,472 @@
+[
+  {
+    "categoryId": "apex-gp",
+    "realWorldEquivalent": "Formula 1",
+    "champions": [
+      {
+        "season": 1950,
+        "driversChampion": "Giuseppe Farina",
+        "teamsChampion": null,
+        "notes": "Primer campeonato mundial de pilotos."
+      },
+      {
+        "season": 1951,
+        "driversChampion": "Juan Manuel Fangio",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1952,
+        "driversChampion": "Alberto Ascari",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1953,
+        "driversChampion": "Alberto Ascari",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1954,
+        "driversChampion": "Juan Manuel Fangio",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1955,
+        "driversChampion": "Juan Manuel Fangio",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1956,
+        "driversChampion": "Juan Manuel Fangio",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1957,
+        "driversChampion": "Juan Manuel Fangio",
+        "teamsChampion": null,
+        "notes": ""
+      },
+      {
+        "season": 1958,
+        "driversChampion": "Mike Hawthorn",
+        "teamsChampion": "Vanwall",
+        "notes": ""
+      },
+      {
+        "season": 1959,
+        "driversChampion": "Jack Brabham",
+        "teamsChampion": "Cooper-Climax",
+        "notes": ""
+      },
+      {
+        "season": 1960,
+        "driversChampion": "Jack Brabham",
+        "teamsChampion": "Cooper-Climax",
+        "notes": ""
+      },
+      {
+        "season": 1961,
+        "driversChampion": "Phil Hill",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1962,
+        "driversChampion": "Graham Hill",
+        "teamsChampion": "BRM",
+        "notes": ""
+      },
+      {
+        "season": 1963,
+        "driversChampion": "Jim Clark",
+        "teamsChampion": "Lotus-Climax",
+        "notes": ""
+      },
+      {
+        "season": 1964,
+        "driversChampion": "John Surtees",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1965,
+        "driversChampion": "Jim Clark",
+        "teamsChampion": "Lotus-Climax",
+        "notes": ""
+      },
+      {
+        "season": 1966,
+        "driversChampion": "Jack Brabham",
+        "teamsChampion": "Brabham-Repco",
+        "notes": ""
+      },
+      {
+        "season": 1967,
+        "driversChampion": "Denny Hulme",
+        "teamsChampion": "Brabham-Repco",
+        "notes": ""
+      },
+      {
+        "season": 1968,
+        "driversChampion": "Graham Hill",
+        "teamsChampion": "Lotus-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1969,
+        "driversChampion": "Jackie Stewart",
+        "teamsChampion": "Matra-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1970,
+        "driversChampion": "Jochen Rindt",
+        "teamsChampion": "Lotus-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1971,
+        "driversChampion": "Jackie Stewart",
+        "teamsChampion": "Tyrrell-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1972,
+        "driversChampion": "Emerson Fittipaldi",
+        "teamsChampion": "Lotus-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1973,
+        "driversChampion": "Jackie Stewart",
+        "teamsChampion": "Lotus-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1974,
+        "driversChampion": "Emerson Fittipaldi",
+        "teamsChampion": "McLaren-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1975,
+        "driversChampion": "Niki Lauda",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1976,
+        "driversChampion": "James Hunt",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1977,
+        "driversChampion": "Niki Lauda",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1978,
+        "driversChampion": "Mario Andretti",
+        "teamsChampion": "Lotus-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1979,
+        "driversChampion": "Jody Scheckter",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1980,
+        "driversChampion": "Alan Jones",
+        "teamsChampion": "Williams-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1981,
+        "driversChampion": "Nelson Piquet",
+        "teamsChampion": "Williams-Ford",
+        "notes": ""
+      },
+      {
+        "season": 1982,
+        "driversChampion": "Keke Rosberg",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1983,
+        "driversChampion": "Nelson Piquet",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 1984,
+        "driversChampion": "Niki Lauda",
+        "teamsChampion": "McLaren-TAG",
+        "notes": ""
+      },
+      {
+        "season": 1985,
+        "driversChampion": "Alain Prost",
+        "teamsChampion": "McLaren-TAG",
+        "notes": ""
+      },
+      {
+        "season": 1986,
+        "driversChampion": "Alain Prost",
+        "teamsChampion": "Williams-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1987,
+        "driversChampion": "Nelson Piquet",
+        "teamsChampion": "Williams-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1988,
+        "driversChampion": "Ayrton Senna",
+        "teamsChampion": "McLaren-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1989,
+        "driversChampion": "Alain Prost",
+        "teamsChampion": "McLaren-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1990,
+        "driversChampion": "Ayrton Senna",
+        "teamsChampion": "McLaren-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1991,
+        "driversChampion": "Ayrton Senna",
+        "teamsChampion": "McLaren-Honda",
+        "notes": ""
+      },
+      {
+        "season": 1992,
+        "driversChampion": "Nigel Mansell",
+        "teamsChampion": "Williams-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1993,
+        "driversChampion": "Alain Prost",
+        "teamsChampion": "Williams-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1994,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Williams-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1995,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Benetton-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1996,
+        "driversChampion": "Damon Hill",
+        "teamsChampion": "Williams-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1997,
+        "driversChampion": "Jacques Villeneuve",
+        "teamsChampion": "Williams-Renault",
+        "notes": ""
+      },
+      {
+        "season": 1998,
+        "driversChampion": "Mika Häkkinen",
+        "teamsChampion": "McLaren-Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 1999,
+        "driversChampion": "Mika Häkkinen",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2000,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2001,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2002,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2003,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2004,
+        "driversChampion": "Michael Schumacher",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2005,
+        "driversChampion": "Fernando Alonso",
+        "teamsChampion": "Renault",
+        "notes": ""
+      },
+      {
+        "season": 2006,
+        "driversChampion": "Fernando Alonso",
+        "teamsChampion": "Renault",
+        "notes": ""
+      },
+      {
+        "season": 2007,
+        "driversChampion": "Kimi Räikkönen",
+        "teamsChampion": "Ferrari",
+        "notes": ""
+      },
+      {
+        "season": 2008,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Ferrari",
+        "notes": "Hamilton consigue su primer título mundial."
+      },
+      {
+        "season": 2009,
+        "driversChampion": "Jenson Button",
+        "teamsChampion": "Brawn-Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2010,
+        "driversChampion": "Sebastian Vettel",
+        "teamsChampion": "Red Bull-Renault",
+        "notes": ""
+      },
+      {
+        "season": 2011,
+        "driversChampion": "Sebastian Vettel",
+        "teamsChampion": "Red Bull-Renault",
+        "notes": ""
+      },
+      {
+        "season": 2012,
+        "driversChampion": "Sebastian Vettel",
+        "teamsChampion": "Red Bull-Renault",
+        "notes": ""
+      },
+      {
+        "season": 2013,
+        "driversChampion": "Sebastian Vettel",
+        "teamsChampion": "Red Bull-Renault",
+        "notes": ""
+      },
+      {
+        "season": 2014,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2015,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2016,
+        "driversChampion": "Nico Rosberg",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2017,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2018,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2019,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2020,
+        "driversChampion": "Lewis Hamilton",
+        "teamsChampion": "Mercedes",
+        "notes": ""
+      },
+      {
+        "season": 2021,
+        "driversChampion": "Max Verstappen",
+        "teamsChampion": "Mercedes",
+        "notes": "Verstappen logra su primer campeonato."
+      },
+      {
+        "season": 2022,
+        "driversChampion": "Max Verstappen",
+        "teamsChampion": "Red Bull-RBPT",
+        "notes": ""
+      },
+      {
+        "season": 2023,
+        "driversChampion": "Max Verstappen",
+        "teamsChampion": "Red Bull-Honda RBPT",
+        "notes": ""
+      },
+      {
+        "season": 2024,
+        "driversChampion": "Max Verstappen",
+        "teamsChampion": "McLaren-Mercedes",
+        "notes": ""
+      }
+    ],
+    "news": [
+      {
+        "season": 1950,
+        "title": "Giuseppe Farina gana el primer campeonato mundial de pilotos."
+      },
+      {
+        "season": 2008,
+        "title": "Hamilton consigue su primer título mundial."
+      },
+      {
+        "season": 2021,
+        "title": "Verstappen logra su primer campeonato."
+      }
+    ]
+  }
+]

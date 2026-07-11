@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "global": {"minimumDriverAge":16,"retirementAgeRange":[35,42],"attributeMin":1,"attributeMax":100,"currency":"USD"},
+  "economy": {"raceTravelCost":220000,"baseSeasonPrize":8000000,"positionPrizeStep":550000,"upgradeBaseCost":650000,"salaryPaymentRounds":8},
+  "market": {"transferFeeMultiplier":1,"freeAgentSigningBonus":0.12,"aiMoveChance":0.42}
+}
