@@ -7,7 +7,7 @@ const sessionLabel = { fp1: "Practice 1", fp2: "Practice 2", fp3: "Practice 3", 
 const compactName = name => name?.split(" ").slice(-1)[0] ?? "Piloto";
 const option=(value,label,current)=>`<option value="${value}" ${value===current?"selected":""}>${label}</option>`;
 
-export function renderRaceWeekendScreen(world, data) {
+export function renderRaceWeekendScreen(world, data, ui = {}) {
   const team=userTeam(world),category=world.categories.find(c=>c.id===team.categoryId),state=getCategoryState(world, category.id);
   const weekend=world.activeWeekend?.categoryId===category.id?world.activeWeekend:null;
   const circuit=data.circuits.find(c=>c.id===(weekend?.circuitId??category.calendar[state.currentRound-1]));
@@ -20,8 +20,23 @@ export function renderRaceWeekendScreen(world, data) {
   html+=`<article class="circuit-preview race-weekend-hero"><div class="circuit-number">R${state.currentRound}</div><div><span class="kicker">${circuit.countryCode} · ${circuit.location}</span><h2>${circuit.name}</h2><p>${circuit.type} · ${circuit.lengthKm} km · ${circuit.laps} vueltas · ${circuit.streetCircuit?"Callejero":"Permanente"}</p><div class="race-facts"><div><span>Aero</span><strong>${circuit.aeroImportance}</strong></div><div><span>Motor</span><strong>${circuit.engineImportance}</strong></div><div><span>Frenos</span><strong>${circuit.brakingImportance}</strong></div><div><span>Lluvia</span><strong>${circuit.rainProbability}%</strong></div></div></div></article>`;
   if(!weekend)return html+`<article class="card"><h3>Formato</h3><p>${(category.raceRules.weekendFormat??[]).map(s=>sessionLabel[s]??s).join(" → ")}</p><p>Iniciá el Race Weekend para correr prácticas, clasificación y carrera por segmentos. En mobile el setup y la estrategia se muestran como controles táctiles.</p></article>`;
 
-  html+=mobileOverview(world,weekend,circuit)+setupBlock(world,weekend)+practiceBlock(world,weekend)+qualifyingBlock(world,weekend)+raceBlock(world,weekend);
+  html+=sessionSummaryBlock(world,weekend,ui)+mobileOverview(world,weekend,circuit)+setupBlock(world,weekend)+practiceBlock(world,weekend)+qualifyingBlock(world,weekend)+raceBlock(world,weekend);
   return html;
+}
+
+function sessionSummaryBlock(world,weekend,ui){
+  if(!weekend||!ui?.lastSessionSummary)return"";
+  const type=ui.lastSessionSummary.type;
+  const playerTeam=userTeam(world);
+  const ids=new Set(playerTeam.drivers??[]);
+  const practiceKeys=Object.keys(weekend.sessions).filter(key=>weekend.sessions[key]?.type==="practice");
+  const latestPractice=practiceKeys.at(-1);
+  const session=type==="practice"?weekend.sessions[latestPractice]:type==="qualifying"?weekend.sessions.qualifying:weekend.sessions.race;
+  if(!session)return"";
+  const rows=(session.results??[]).filter(r=>ids.has(r.driverId));
+  const title=type==="practice"?`${sessionLabel[latestPractice]??"Práctica"} finalizada`:type==="qualifying"?"Qualy finalizada":"Carrera por segmentos finalizada";
+  const subtitle=type==="practice"?"Feedback de setup listo":type==="qualifying"?"Grilla confirmada":"Resultado provisional listo";
+  return `<section class="card session-result-focus" id="session-focus"><div><span class="metric-label">RESUMEN DE SESIÓN</span><h2>${title}</h2><p>${subtitle}</p></div><div class="session-result-grid">${rows.map(r=>`<article><strong>${getDriver(world,r.driverId)?.name??r.driverId}</strong><span>P${r.position}</span><small>${r.feedback??r.recommendation??`${r.points??0} pts · ${r.pits??0} boxes`}</small></article>`).join("")||`<article><strong>Sin datos del equipo</strong><span>—</span><small>Revisá la tabla completa.</small></article>`}</div><div class="actions"><button class="button primary" data-action="${type==="practice"?"run-practice":type==="qualifying"?"run-weekend-race":"finalize-weekend"}">${type==="practice"?"Continuar práctica":type==="qualifying"?"Ir a carrera":"Finalizar GP"}</button><button class="button" data-action="go" data-screen="race-weekend">Ver sesión completa</button></div></section>`;
 }
 
 function mobileOverview(world,weekend,circuit){

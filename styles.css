@@ -236,3 +236,51 @@ body{background:radial-gradient(circle at 85% -10%,color-mix(in srgb,var(--team-
   .release-home h2{font-size:44px}
   .loading-card h1{font-size:42px}
 }
+
+/* Alpha 0.7.1 — visual feedback, race results and dynamic UX */
+.screen{animation:screenIn .22s ease both}@keyframes screenIn{from{opacity:.65;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hud-swap{animation:hudSwap .2s ease both}@keyframes hudSwap{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.button:disabled{filter:saturate(.6);opacity:.55}.button[disabled]{pointer-events:none}
+.processing-panel{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:center;border-left:4px solid var(--team-primary);animation:slideUp .24s ease both}
+.spinner{width:42px;height:42px;border-radius:50%;border:3px solid rgba(255,255,255,.12);border-top-color:var(--team-primary);animation:spin .75s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.processing-steps{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.processing-steps li{padding:8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:10px;text-align:center}.processing-steps li.active{border-color:var(--team-primary);color:var(--text);background:color-mix(in srgb,var(--team-primary) 14%,transparent)}
+.post-race-focus{display:grid;gap:12px;animation:slideUp .26s ease both}.post-race-hero{display:flex;justify-content:space-between;gap:16px;align-items:center;border-left:4px solid var(--team-primary);background:linear-gradient(135deg,color-mix(in srgb,var(--team-primary) 16%,transparent),transparent 58%),var(--panel)}
+.post-race-hero h2{font-size:clamp(26px,5vw,44px);margin:4px 0}.winner-badge{text-align:right}.winner-badge span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.winner-badge strong{font-size:18px}
+.post-podium{margin:0}.player-result-card{padding:10px 0;border-bottom:1px solid var(--line)}.player-result-card:last-child{border-bottom:0}.player-result-card h3{font-size:30px;margin:4px 0}.good{color:var(--good)}.bad{color:var(--bad)}.neutral{color:var(--muted)}
+.post-race-actions{position:sticky;bottom:10px;z-index:4;background:rgba(8,14,21,.82);backdrop-filter:blur(10px);border-radius:16px;padding:10px}
+.session-result-focus{display:grid;gap:12px;border-left:4px solid var(--team-secondary);animation:slideUp .24s ease both}.session-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.session-result-grid article{border:1px solid var(--line);border-radius:12px;padding:10px;background:#0b141d}.session-result-grid strong,.session-result-grid span,.session-result-grid small{display:block}.session-result-grid span{font-size:28px;font-weight:950;color:var(--accent-2)}
+.chart-card{overflow:hidden}.bar-chart{display:grid;gap:10px;margin-top:12px}.bar-row{display:grid;grid-template-columns:minmax(88px,150px) 1fr auto;gap:10px;align-items:center}.bar-row span{font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar-row strong{font-size:11px;color:var(--muted)}.bar-track{position:relative;height:10px;border-radius:999px;background:#0b141d;overflow:hidden}.bar-track em{position:absolute;inset:0 auto 0 0;width:var(--now);border-radius:inherit;background:linear-gradient(90deg,var(--team-primary),var(--team-secondary));animation:barGrow .28s ease both}.bar-track em::before{content:"";position:absolute;left:var(--start);top:0;bottom:0;width:2px;background:#fff;opacity:.75}@keyframes barGrow{from{width:0}to{width:var(--now)}}
+.driver-compare-card{margin-bottom:12px}.driver-compare-grid{display:grid;gap:12px}.compare-row{display:grid;grid-template-columns:120px 1fr 1fr;gap:10px;align-items:center}.compare-row>span{font-size:11px;color:var(--muted);font-weight:850}.compare-bar{display:grid;grid-template-columns:70px 1fr 34px;gap:8px;align-items:center}.compare-bar b{font-size:10px}.compare-bar em{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--team-primary),var(--team-secondary));width:var(--value);animation:barGrow .28s ease both}.compare-bar strong{font-size:10px;text-align:right}
+.latest-race-card{border-left:4px solid var(--team-primary)}
+@keyframes slideUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){
+  .processing-panel{grid-template-columns:42px 1fr}.processing-steps{grid-template-columns:1fr 1fr}
+  .post-race-hero{display:grid}.winner-badge{text-align:left}.post-race-actions{display:grid;grid-template-columns:1fr;bottom:calc(82px + env(safe-area-inset-bottom))}
+  .session-result-grid{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:84px 1fr;gap:8px}.bar-row strong{grid-column:2}
+  .compare-row{grid-template-columns:1fr}.compare-bar{grid-template-columns:72px 1fr 32px}
+  .race-mobile-actions:has(+ .processing-panel),.race-toolbar:has(+ .processing-panel){display:none}
+}
+/* Alpha 0.7.2 — premium mobile market, compact standings and clearer engineering */
+.premium-market-card{display:grid;gap:.75rem}
+.market-card-head,.driver-offer-summary{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.rating-badge{min-width:58px;min-height:58px;border-radius:18px;background:linear-gradient(145deg,rgba(80,166,255,.18),rgba(66,211,146,.14));display:grid;place-items:center;text-align:center;border:1px solid rgba(255,255,255,.12)}
+.rating-badge strong{font-size:1.45rem;line-height:1}
+.rating-badge span{font-size:.68rem;text-transform:uppercase;color:var(--muted)}
+.rating-badge.big{min-width:76px;min-height:76px}
+.market-interest-row{display:flex;align-items:center;justify-content:space-between;gap:.75rem;font-size:.9rem}
+.interest-bar{height:8px;border-radius:999px;background:rgba(255,255,255,.09);overflow:hidden}
+.interest-bar span{display:block;height:100%;border-radius:999px;background:var(--accent)}
+.interest-bar.good span{background:#42d392}.interest-bar.info span{background:#50a6ff}.interest-bar.warn span{background:#f7c948}.interest-bar.bad span{background:#ff6b6b}
+.result-banner.good{border-color:rgba(66,211,146,.45)}.result-banner.bad{border-color:rgba(255,107,107,.45)}
+.positive-text{color:#42d392;font-weight:700}
+.mobile-stat-grid.compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}
+@media(max-width:720px){
+  .compact-ranking-row{min-height:50px;padding:.45rem .65rem;border-radius:14px}
+  .compact-ranking-row summary{min-height:48px;display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:.5rem}
+  .compact-ranking-row .rank{font-size:.85rem}
+  .compact-ranking-row .name{font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .compact-row-details{font-size:.78rem;gap:.35rem}
+  .market-mobile-card{padding:.85rem}
+}
