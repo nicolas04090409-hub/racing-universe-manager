@@ -32,6 +32,8 @@ import { renderRaceWeekendScreen } from "./ui/raceWeekendScreen.js";
 import { renderHistoryScreen } from "./ui/historyScreen.js";
 
 const SAVE_KEY = "racingUniverseManager.save.v1";
+const DATA_BASE_URL = new URL("./data/", import.meta.url);
+const DATA_FILES = ["categories", "teams", "drivers", "circuits", "regulations", "academies", "staff", "manufacturers", "sponsors", "historicalChampions"];
 const NAVIGATION = [
   { section: "GENERAL", items: [["dashboard", "Paddock"], ["team", "Mi equipo"], ["drivers", "Pilotos"], ["market", "Mercado"], ["negotiations", "Negociaciones"]] },
   { section: "COMPETICIÓN", items: [["race-weekend", "Race Weekend"], ["calendar", "Calendario"], ["race", "Carreras"], ["standings", "Posiciones"], ["history", "Historial"]] },
@@ -51,9 +53,101 @@ console.info(`${APP_NAME} — ${BUILD_LABEL}`);
 const loadingVersion = document.querySelector("#loading-version");
 if (loadingVersion) loadingVersion.textContent = BUILD_LABEL;
 
+function setStartupMode(mode) {
+  document.body.dataset.startup = mode;
+  document.querySelector("#app")?.classList.toggle("startup-hidden", mode !== "ready");
+}
+
 function hideLoading() {
   loadingScreen?.classList.add("hidden");
   setTimeout(() => loadingScreen?.remove(), 250);
+}
+
+class StartupResourceError extends Error {
+  constructor(message, details = {}) {
+    super(message);
+    this.name = "StartupResourceError";
+    Object.assign(this, details);
+  }
+}
+
+async function loadJson(name) {
+  const url = new URL(`${name}.json?v=${APP_VERSION}`, DATA_BASE_URL);
+  let response;
+  try {
+    response = await fetch(url, { cache: "no-store" });
+  } catch (cause) {
+    throw new StartupResourceError(`No se pudo solicitar ${name}.json`, { kind: "fetch", resource: `${name}.json`, url: url.href, cause });
+  }
+  if (!response.ok) {
+    throw new StartupResourceError(`No se pudo cargar ${name}.json: HTTP ${response.status}`, { kind: "http", resource: `${name}.json`, url: url.href, status: response.status, statusText: response.statusText });
+  }
+  try {
+    return await response.json();
+  } catch (cause) {
+    throw new StartupResourceError(`JSON inválido en ${name}.json`, { kind: "json", resource: `${name}.json`, url: url.href, cause });
+  }
+}
+
+function startupErrorInfo(error) {
+  if (window.location.protocol === "file:") {
+    return {
+      title: "El juego necesita un servidor local",
+      message: "Abrí el juego mediante el launcher o un servidor HTTP. No lo abras con doble click en index.html."
+    };
+  }
+  if (error?.kind === "http") {
+    return {
+      title: "No se pudieron cargar los datos del juego.",
+      message: `El recurso ${error.resource ?? "requerido"} respondió HTTP ${error.status}. Revisá que GitHub Pages haya publicado todos los archivos y recargá sin caché.`
+    };
+  }
+  if (error?.kind === "fetch") {
+    return {
+      title: "No se pudieron cargar los datos del juego.",
+      message: "Falló una solicitud de recursos. Revisá la conexión, el despliegue de GitHub Pages o si el navegador bloqueó algún archivo."
+    };
+  }
+  if (error?.kind === "json") {
+    return {
+      title: "No se pudieron leer los datos del juego.",
+      message: "Un archivo JSON está dañado o GitHub Pages devolvió contenido inesperado. Abrí los detalles técnicos para ver cuál."
+    };
+  }
+  return {
+    title: "No se pudo cargar el juego.",
+    message: "Hubo un problema al cargar los archivos de la aplicación. Revisá que la publicación haya terminado correctamente y recargá la página."
+  };
+}
+
+function startupErrorDetails(error) {
+  const lines = [
+    `Mensaje: ${error?.message ?? error}`,
+    `Tipo: ${error?.name ?? typeof error}`,
+    `Kind: ${error?.kind ?? "unknown"}`,
+    `URL actual: ${window.location.href}`,
+    `Recurso: ${error?.resource ?? "n/a"}`,
+    `URL solicitada: ${error?.url ?? "n/a"}`,
+    `Status HTTP: ${error?.status ?? "n/a"} ${error?.statusText ?? ""}`.trim()
+  ];
+  const cause = error?.cause;
+  if (cause) lines.push(`Causa: ${cause.message ?? cause}`);
+  if (error?.stack) lines.push("", String(error.stack).split("\n").slice(0, 8).join("\n"));
+  return lines.join("\n");
+}
+
+function showStartupError(error) {
+  const info = startupErrorInfo(error);
+  const details = startupErrorDetails(error);
+  setStartupMode("error");
+  console.error("Startup failed", error);
+  if (typeof window.__RUM_SHOW_STARTUP_ERROR__ === "function") {
+    window.__RUM_SHOW_STARTUP_ERROR__(info.title, info.message, details);
+    return;
+  }
+  if (screen) {
+    screen.innerHTML = `<div class="empty card load-error"><div><h2>${info.title}</h2><p>${info.message}</p><div class="actions"><button class="button primary" data-action="retry-load">Reintentar</button><button class="button" data-action="toggle-error-details">Ver detalles técnicos</button></div><pre id="error-details" class="hidden">${details}</pre></div></div>`;
+  }
 }
 
 function warnPossibleEncodingIssue() {
@@ -66,12 +160,7 @@ function warnPossibleEncodingIssue() {
 }
 
 async function loadData() {
-  const files = ["categories", "teams", "drivers", "circuits", "regulations", "academies", "staff", "manufacturers", "sponsors", "historicalChampions"];
-  const entries = await Promise.all(files.map(async name => {
-    const response = await fetch(`./data/${name}.json?v=${APP_VERSION}`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`${response.status} al cargar ${name}.json`);
-    return [name, await response.json()];
-  }));
+  const entries = await Promise.all(DATA_FILES.map(async name => [name, await loadJson(name)]));
   return Object.fromEntries(entries);
 }
 
@@ -355,18 +444,18 @@ document.querySelector("#global-search").addEventListener("keydown", event => {
   const query = event.target.value.trim().toLowerCase();
   const driver = state.world.drivers.find(d => d.name.toLowerCase().includes(query));
   if (driver) { state.selectedDriverId = driver.id; state.world.viewCategoryId = driver.categoryId ?? state.world.currentCategoryId; state.screen = "drivers"; render(); }
-  else toast("No se encontrÃ³ un piloto con ese nombre.");
+  else toast("No se encontró un piloto con ese nombre.");
 });
 
 async function boot() {
   try {
+    setStartupMode("loading");
     state.data = await loadData();
+    setStartupMode("ready");
     hideLoading();
     render();
   } catch (error) {
-    hideLoading();
-    console.error("Data load failed", error);
-    screen.innerHTML = `<div class="empty card load-error"><div><h2>No se pudieron cargar los datos del juego.</h2><p>Revisá la conexión o volvé a intentar. Si estás en GitHub Pages, esperá unos segundos y recargá sin caché.</p><div class="actions"><button class="button primary" data-action="retry-load">Reintentar</button><button class="button" data-action="toggle-error-details">Ver detalles técnicos</button></div><pre id="error-details" class="hidden">${String(error.stack ?? error.message ?? error)}</pre></div></div>`;
+    showStartupError(error);
   }
 }
 

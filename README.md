@@ -4,7 +4,7 @@ Juego web de gestión de automovilismo inspirado en simuladores de management de
 
 ## Estado del proyecto
 
-Alpha v0.7.3 — UTF-8, HUD mobile funcional y clasificaciones completas.
+Alpha v0.7.4 — Corrección de inicio en GitHub Pages, rutas y UTF-8.
 
 La versión visible del juego se centraliza en `appMeta.js`. El formato interno de guardado puede tener una versión distinta.
 
@@ -20,33 +20,9 @@ La versión visible del juego se centraliza en `appMeta.js`. El formato interno 
 - Finanzas, contratos, staff, sponsors e ingeniería integrados.
 - Ingeniería con proyectos más rápidos, capacidad clara, instalaciones más accesibles e impacto visible contra rivales.
 - Textos normalizados en UTF-8 para local y GitHub Pages.
-- HUD mobile funcional con grupos Equipo, Campeonato, Finanzas y Actividad.
 - Resultados y clasificaciones completas con soporte para grillas variables de 20, 22 o más pilotos.
-- Gráficos simples de campeonato, evolución técnica y comparación de pilotos.
 - PWA básica con manifest, favicon e iconos.
 - Guardado/carga local mediante LocalStorage.
-
-## Flujo de carrera
-
-Al tocar `Simular próxima carrera`, el juego muestra un estado breve de procesamiento, evita dobles toques y luego enfoca automáticamente el resultado:
-
-- circuito, categoría, ronda, clima y vueltas;
-- ganador y podio;
-- resultado de pilotos del jugador;
-- posiciones ganadas/perdidas;
-- puntos sumados;
-- cambios de campeonato;
-- acciones para ver clasificación completa, campeonato, Paddock o estrategia.
-
-## Uso mobile
-
-En celular, las acciones importantes priorizan:
-
-1. resultado;
-2. consecuencia;
-3. siguiente acción.
-
-El HUD superior se puede alternar entre Equipo, Campeonato, Finanzas y Actividad sin recargar la página.
 
 ## Cómo jugar localmente
 
@@ -78,6 +54,22 @@ Después de subir una nueva versión:
 1. Esperar el despliegue de GitHub Pages.
 2. Abrir en incógnito o recargar sin caché.
 3. Verificar que la pantalla muestre la versión visible correcta.
+
+## Solución de problemas en GitHub Pages
+
+1. Esperar que `Actions → pages build and deployment` quede verde.
+2. Verificar que `appMeta.js` tenga la versión correcta.
+3. Abrir el juego en incógnito.
+4. Si falla, tocar `Ver detalles técnicos`.
+5. Comprobar si existe un recurso 404 o si algún JSON devolvió HTML.
+
+Errores típicos:
+
+- `404`: falta subir un archivo o hay diferencia de mayúsculas/minúsculas.
+- `Unexpected token '<'`: una ruta de JSON/JS devolvió una página HTML en lugar del archivo esperado.
+- `Failed to fetch`: el navegador no pudo solicitar el recurso.
+
+En GitHub Pages no hace falta Python, PowerShell ni launcher local.
 
 ## Guardado de partidas
 

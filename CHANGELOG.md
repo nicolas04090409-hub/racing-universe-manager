@@ -1,5 +1,16 @@
 # Changelog
 
+## Alpha 0.7.4 — GitHub Pages startup fix y normalización UTF-8
+
+- Corregida la pantalla de inicio para GitHub Pages: en `https://...` ya no muestra instrucciones de Python/PowerShell.
+- Carga de JSON centralizada con URLs relativas a `import.meta.url`, compatible con subcarpetas como `/racing-universe-manager/`.
+- Recursos principales versionados con `?v=0.7.4`: `main.js`, `styles.css`, manifest e iconos.
+- Mensajes de error diferenciados para `file://`, fallos de `fetch`, HTTP 404/500, JSON inválido y errores generales.
+- Pantalla de error limpia: oculta la app principal y muestra solo error, Reintentar y detalles técnicos.
+- Auditoría de rutas relativas, imports ES Modules y nombres exactos/case-sensitive.
+- Manifest normalizado en UTF-8.
+- Se mantiene el HUD mobile funcional y las clasificaciones completas de 0.7.3.
+
 ## Alpha 0.7.3 — UTF-8, HUD mobile y clasificaciones completas
 
 - Normalización completa de archivos visibles a UTF-8.
@@ -25,7 +36,6 @@
 - Instalaciones más baratas/rápidas y con impacto más claro.
 - IA de desarrollo usa reglas comparables, cooldown y capacidad para no progresar injustamente rápido.
 - Standings mobile ajustados a filas más compactas.
-- README actualizado a Alpha 0.7.2.
 
 ## Alpha 0.7.1 — Feedback visual y resultados dinámicos
 

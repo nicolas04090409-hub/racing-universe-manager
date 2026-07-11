@@ -1,5 +1,5 @@
 export const APP_NAME = "Racing Universe Manager";
-export const APP_VERSION = "0.7.3";
+export const APP_VERSION = "0.7.4";
 export const RELEASE_CHANNEL = "Alpha";
 export const BUILD_LABEL = `${RELEASE_CHANNEL} v${APP_VERSION}`;
 export const SAVE_FORMAT_VERSION = "0.6.6";

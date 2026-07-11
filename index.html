@@ -9,27 +9,23 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Racing Manager">
   <title>Racing Universe Manager</title>
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16.png">
-  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="./styles.css?v=0.7.3">
+  <link rel="manifest" href="./manifest.webmanifest?v=0.7.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32.png?v=0.7.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16.png?v=0.7.4">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png?v=0.7.4">
+  <link rel="stylesheet" href="./styles.css?v=0.7.4">
 </head>
-<body>
+<body data-startup="loading">
   <div id="loading-screen" class="loading-screen" aria-live="polite">
     <div class="loading-card">
       <span class="brand-mark big">R</span>
       <h1>Racing Universe Manager</h1>
       <p id="loading-message">Inicializando universo...</p>
-      <small id="loading-version">Alpha v0.7.3</small>
-      <div id="loading-help" class="loading-help hidden">
-        <strong>El juego necesita servidor local.</strong>
-        <span>Si abriste este archivo con doble click, cerralo y usá <b>Iniciar Racing Universe Manager.bat</b>.</span>
-        <span>También podés abrir PowerShell en la carpeta y ejecutar: <code>python -m http.server 8000</code></span>
-      </div>
+      <small id="loading-version">Alpha v0.7.4</small>
+      <div id="loading-help" class="loading-help hidden"></div>
     </div>
   </div>
-  <div id="app" class="app-shell">
+  <div id="app" class="app-shell startup-hidden">
     <aside class="sidebar">
       <div class="brand"><span class="brand-mark">R</span><div><strong>Racing Universe</strong><small>MANAGER</small></div></div>
       <nav id="main-nav" aria-label="Navegación principal"></nav>
@@ -56,24 +52,51 @@
   <div id="toast-root" class="toast-root" aria-live="assertive"></div>
   <script>
     window.__RUM_BOOT_STARTED__ = false;
-    window.addEventListener("error", function(event) {
+    window.__RUM_SHOW_STARTUP_ERROR__ = function(title, message, details) {
+      document.body.dataset.startup = "error";
+      var app = document.querySelector("#app");
       var help = document.querySelector("#loading-help");
       var msg = document.querySelector("#loading-message");
-      if (help && document.querySelector("#loading-screen:not(.hidden)")) {
+      var version = document.querySelector("#loading-version");
+      if (app) app.classList.add("startup-hidden");
+      if (msg) msg.textContent = title || "No se pudo iniciar el juego.";
+      if (version) version.textContent = "Alpha v0.7.4";
+      if (help) {
         help.classList.remove("hidden");
-        if (msg) msg.textContent = "No se pudo iniciar el juego.";
+        help.innerHTML = "<p>" + (message || "Hubo un problema al cargar los archivos de la aplicación.") + "</p>"
+          + "<div class=\"actions\"><button class=\"button primary\" data-action=\"retry-load\">Reintentar</button><button class=\"button\" data-action=\"toggle-error-details\">Ver detalles técnicos</button></div>"
+          + "<pre id=\"error-details\" class=\"hidden\"></pre>";
+        var pre = document.querySelector("#error-details");
+        if (pre) pre.textContent = details || "";
       }
+    };
+    window.addEventListener("error", function(event) {
       console.error(event.error || event.message);
+      if (!window.__RUM_BOOT_STARTED__) {
+        if (location.protocol === "file:") {
+          window.__RUM_SHOW_STARTUP_ERROR__("El juego necesita un servidor local", "Abrí el juego mediante el launcher o un servidor HTTP. No lo abras con doble click en index.html.", String(event.error?.stack || event.message || ""));
+        } else {
+          window.__RUM_SHOW_STARTUP_ERROR__("No se pudo cargar el juego", "Hubo un problema al cargar los archivos de la aplicación. Recargá sin caché o revisá que GitHub Pages haya terminado el despliegue.", String(event.error?.stack || event.message || ""));
+        }
+      }
+    });
+    document.addEventListener("click", function(event) {
+      if (window.__RUM_BOOT_STARTED__) return;
+      var button = event.target.closest("[data-action]");
+      if (!button) return;
+      if (button.dataset.action === "retry-load") window.location.reload();
+      if (button.dataset.action === "toggle-error-details") document.querySelector("#error-details")?.classList.toggle("hidden");
     });
     setTimeout(function() {
       if (!window.__RUM_BOOT_STARTED__ && document.querySelector("#loading-screen:not(.hidden)")) {
-        var help = document.querySelector("#loading-help");
-        var msg = document.querySelector("#loading-message");
-        if (help) help.classList.remove("hidden");
-        if (msg) msg.textContent = location.protocol === "file:" ? "Abrilo con el launcher .bat, no con doble click en index.html." : "El arranque tardó más de lo esperado. Revisá la consola o recargá sin caché.";
+        if (location.protocol === "file:") {
+          window.__RUM_SHOW_STARTUP_ERROR__("El juego necesita un servidor local", "Abrilo con el launcher .bat o con un servidor HTTP. En GitHub Pages no necesitás Python.", "Protocolo actual: file://");
+        } else {
+          window.__RUM_SHOW_STARTUP_ERROR__("No se pudo cargar el juego", "El script principal no arrancó. Verificá que main.js?v=0.7.4 exista y que el despliegue de GitHub Pages haya terminado.", "URL actual: " + location.href);
+        }
       }
-    }, 3500);
+    }, 4500);
   </script>
-  <script type="module" src="./main.js?v=0.7.3"></script>
+  <script type="module" src="./main.js?v=0.7.4"></script>
 </body>
 </html>
